@@ -1,0 +1,301 @@
+{
+  "version": "0.2.0-beta.1",
+  "verifiedAt": "2026-11-02T16:54:32.613532+00:00",
+  "sourceCommit": "ae38eca16b32fe47b9fa5e6a9eb18c0e3a2e6ee2",
+  "sourceRepository": "nish1-arch/coldhold-backend (private)",
+  "verificationCommit": "f01361bf64dffb874ed00adf5ec09e5b60deb06d",
+  "verificationCommitDifference": "Only .github/workflows/ci.yml changed: macos-latest runner pinned to macos-15. All application, native, dependency and packaging files are byte-identical to the package source commit.",
+  "ci": {
+    "conclusion": "success",
+    "createdAt": "2026-11-02T16:47:49Z",
+    "databaseId": 41484960043,
+    "headSha": "f01361bf64dffb874ed00adf5ec09e5b60deb06d",
+    "jobs": [
+      {
+        "name": "node-and-chains",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/nish1-arch/coldhold-backend/actions/runs/41484960043/job/125412740041",
+        "startedAt": "2026-11-02T16:47:53Z",
+        "completedAt": "2026-11-02T16:53:40Z"
+      },
+      {
+        "name": "rust (ubuntu-latest)",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/nish1-arch/coldhold-backend/actions/runs/41484960043/job/125412740508",
+        "startedAt": "2026-11-02T16:47:53Z",
+        "completedAt": "2026-11-02T16:49:56Z"
+      },
+      {
+        "name": "rust (macos-15)",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/nish1-arch/coldhold-backend/actions/runs/41484960043/job/125412740720",
+        "startedAt": "2026-11-02T16:47:52Z",
+        "completedAt": "2026-11-02T16:48:40Z"
+      },
+      {
+        "name": "rust (windows-latest)",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/nish1-arch/coldhold-backend/actions/runs/41484960043/job/125412740791",
+        "startedAt": "2026-11-02T16:47:54Z",
+        "completedAt": "2026-11-02T16:52:18Z"
+      },
+      {
+        "name": "security",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/nish1-arch/coldhold-backend/actions/runs/41484960043/job/125412740797",
+        "startedAt": "2026-11-02T16:47:53Z",
+        "completedAt": "2026-11-02T16:48:39Z"
+      }
+    ],
+    "status": "completed",
+    "updatedAt": "2026-11-02T16:53:40Z",
+    "url": "https://github.com/nish1-arch/coldhold-backend/actions/runs/41484960043"
+  },
+  "packaging": {
+    "conclusion": "success",
+    "createdAt": "2026-11-02T16:34:33Z",
+    "databaseId": 41482809365,
+    "headSha": "ae38eca16b32fe47b9fa5e6a9eb18c0e3a2e6ee2",
+    "jobs": [
+      {
+        "name": "Package linux-x64",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/nish1-arch/coldhold-backend/actions/runs/41482809365/job/125405272879",
+        "startedAt": "2026-11-02T16:34:36Z",
+        "completedAt": "2026-11-02T16:36:46Z"
+      },
+      {
+        "name": "Package mac-x64",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/nish1-arch/coldhold-backend/actions/runs/41482809365/job/125405273499",
+        "startedAt": "2026-11-02T16:34:39Z",
+        "completedAt": "2026-11-02T16:44:39Z"
+      },
+      {
+        "name": "Package mac-arm64",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/nish1-arch/coldhold-backend/actions/runs/41482809365/job/125405273510",
+        "startedAt": "2026-11-02T16:34:37Z",
+        "completedAt": "2026-11-02T16:37:46Z"
+      },
+      {
+        "name": "Package windows-x64",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/nish1-arch/coldhold-backend/actions/runs/41482809365/job/125405273727",
+        "startedAt": "2026-11-02T16:34:43Z",
+        "completedAt": "2026-11-02T16:44:29Z"
+      }
+    ],
+    "status": "completed",
+    "updatedAt": "2026-11-02T16:44:40Z",
+    "url": "https://github.com/nish1-arch/coldhold-backend/actions/runs/41482809365"
+  },
+  "installedApplicationChecks": {
+    "mac-arm64": {
+      "desktopSmoke": "passed",
+      "platform": "darwin",
+      "arch": "arm64",
+      "packaged": true,
+      "version": "0.2.0-beta.1",
+      "node": "24.22.1",
+      "electron": "45.2.1",
+      "isolation": {
+        "node": "undefined",
+        "require": "undefined",
+        "bridge": "function",
+        "origin": "coldhold://app"
+      },
+      "usb": {
+        "devices": []
+      },
+      "freeRpc": true,
+      "restart": "passed",
+      "physicalUsb": "not-tested"
+    },
+    "mac-x64": {
+      "desktopSmoke": "passed",
+      "platform": "darwin",
+      "arch": "x64",
+      "packaged": true,
+      "version": "0.2.0-beta.1",
+      "node": "24.22.1",
+      "electron": "45.2.1",
+      "isolation": {
+        "node": "undefined",
+        "require": "undefined",
+        "bridge": "function",
+        "origin": "coldhold://app"
+      },
+      "usb": {
+        "devices": []
+      },
+      "freeRpc": true,
+      "restart": "passed",
+      "physicalUsb": "not-tested"
+    },
+    "windows-x64": {
+      "desktopSmoke": "passed",
+      "platform": "win32",
+      "arch": "x64",
+      "packaged": true,
+      "version": "0.2.0-beta.1",
+      "node": "24.22.1",
+      "electron": "45.2.1",
+      "isolation": {
+        "node": "undefined",
+        "require": "undefined",
+        "bridge": "function",
+        "origin": "coldhold://app"
+      },
+      "usb": {
+        "devices": []
+      },
+      "freeRpc": true,
+      "restart": "passed",
+      "physicalUsb": "not-tested"
+    },
+    "linux-x64": {
+      "desktopSmoke": "passed",
+      "platform": "linux",
+      "arch": "x64",
+      "packaged": true,
+      "version": "0.2.0-beta.1",
+      "node": "24.22.1",
+      "electron": "45.2.1",
+      "isolation": {
+        "node": "undefined",
+        "require": "undefined",
+        "bridge": "function",
+        "origin": "coldhold://app"
+      },
+      "usb": {
+        "devices": []
+      },
+      "freeRpc": true,
+      "restart": "passed",
+      "physicalUsb": "not-tested"
+    }
+  },
+  "tests": {
+    "rustPassed": 18,
+    "nodePassed": 21,
+    "nodeSkipped": 0,
+    "chainIntegration": [
+      "Anvil EVM",
+      "LiteSVM with real program bytecode"
+    ],
+    "docker": "gateway image, container runtime and restart passed in CI"
+  },
+  "physicalUsb": {
+    "startedAt": "2026-11-02T15:12:02.792Z",
+    "platform": "darwin",
+    "usb": "/Volumes/KINGSTON",
+    "disposableWallet": true,
+    "broadcastTransactions": 0,
+    "passed": [
+      "create_on_real_usb",
+      "wrong_password_denied",
+      "non_usb_denied",
+      "real_usb_unlock",
+      "password_rotation_invalidates_old_password",
+      "phrase_recovery_preserves_all_addresses",
+      "usb_material_rotation",
+      "lost_usb_restore_preserves_addresses_and_old_vault_backup",
+      "physical_usb_testnet_signature_without_broadcast",
+      "physical_unplug_invalidates_session_and_pending_signature",
+      "old_session_rejected_after_reinsert_and_restart",
+      "existing_signature_replay_is_identical_after_restart"
+    ],
+    "status": "passed",
+    "accounts": [
+      {
+        "evm": "0xE1894012E49830Bb4e5DCF7aBd841fbFE12885fb",
+        "evm_path": "m/44'/60'/0'/0/0",
+        "index": 0,
+        "solana": "F8RSu64bvLjL1aTBjBRYoaPJudKawSaYmvkjTY9nRFTF",
+        "solana_path": "m/44'/501'/0'/0'"
+      },
+      {
+        "evm": "0x0Dc15fc8F2F139C42A8921B725AC22Dbc02a4770",
+        "evm_path": "m/44'/60'/0'/0/1",
+        "index": 1,
+        "solana": "41qDA9hLhAswpSkrWEjGKYhua46gRsaSotF3NubJjCGS",
+        "solana_path": "m/44'/501'/1'/0'"
+      },
+      {
+        "evm": "0x9725e953F1EeEeb71cF03d7a719EDFc3Ba12dAf8",
+        "evm_path": "m/44'/60'/0'/0/2",
+        "index": 2,
+        "solana": "FzP2f6Se8exKvEmgQQnNtrM3EmZxz6DD6urgGqZbNmGA",
+        "solana_path": "m/44'/501'/2'/0'"
+      }
+    ],
+    "finishedAt": "2026-11-02T15:16:15.090Z",
+    "createdUsbKeyCount": 4
+  },
+  "costs": {
+    "localRuntime": "free",
+    "paidHostingRequired": false,
+    "apiKeysRequired": false,
+    "rpc": "public free endpoints; service rate and availability limits apply",
+    "mainnet": "network fees, account rent and liquidity are user-funded"
+  },
+  "dependencyAudit": {
+    "npm": "CI npm audit passed; no reported vulnerabilities",
+    "rust": "reachable dependency gate passed; not a blanket zero-advisory claim",
+    "lockfileOnly": "RUSTSEC-2026-0387 crypto-bigint@0.5.5 is disabled and checked unreachable on all targets",
+    "informationalUnmaintained": [
+      "bincode",
+      "derivative",
+      "paste"
+    ]
+  },
+  "limitations": [
+    "Unsigned Windows beta; macOS ad-hoc signed without Developer ID/notarization",
+    "No independent security audit or mainnet acceptance test",
+    "Physical USB verified on macOS Kingston only; Windows/Linux hardware unverified",
+    "Recovery used new profiles/material on the same Kingston, not a second physical USB",
+    "Token/pool launch uses advanced JSON configuration; no automatic updater"
+  ],
+  "installers": [
+    {
+      "name": "Coldhold-0.2.0-beta.1-linux-amd64.deb",
+      "bytes": 111266228,
+      "sha256": "a09d97c3dc42973392d27bb781355fa8cf1a35771d471353277eb8d8b1bfef0a"
+    },
+    {
+      "name": "Coldhold-0.2.0-beta.1-mac-arm64.dmg",
+      "bytes": 138756395,
+      "sha256": "f309126cdb38c82ae94d3d82d63116c821230e3170b57f57b09a6c87f245fb87"
+    },
+    {
+      "name": "Coldhold-0.2.0-beta.1-mac-arm64.zip",
+      "bytes": 134540771,
+      "sha256": "c0787a385c0c6f487d54e8adb0fd748cea63731e2e3218b81bff06b64dd0bd6d"
+    },
+    {
+      "name": "Coldhold-0.2.0-beta.1-mac-x64.dmg",
+      "bytes": 144892208,
+      "sha256": "76ac2673ef8f0482e680457ca3c1b2fea45436d9233c559957d817e93aff95e2"
+    },
+    {
+      "name": "Coldhold-0.2.0-beta.1-mac-x64.zip",
+      "bytes": 140643977,
+      "sha256": "551e3d5f1d0fb05737cce2ce65d4f1476234fe498fcb640bc92570c4e0506821"
+    },
+    {
+      "name": "Coldhold-0.2.0-beta.1-win-x64.exe",
+      "bytes": 131607316,
+      "sha256": "a49fb3a40d39830d0ec9e799731068e9024be35ee8096af1a12ebfd25f8543ae"
+    }
+  ]
+}

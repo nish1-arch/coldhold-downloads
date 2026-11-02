@@ -1,0 +1,47 @@
+{
+  "startedAt": "2026-11-02T15:12:02.792Z",
+  "platform": "darwin",
+  "usb": "/Volumes/KINGSTON",
+  "disposableWallet": true,
+  "broadcastTransactions": 0,
+  "passed": [
+    "create_on_real_usb",
+    "wrong_password_denied",
+    "non_usb_denied",
+    "real_usb_unlock",
+    "password_rotation_invalidates_old_password",
+    "phrase_recovery_preserves_all_addresses",
+    "usb_material_rotation",
+    "lost_usb_restore_preserves_addresses_and_old_vault_backup",
+    "physical_usb_testnet_signature_without_broadcast",
+    "physical_unplug_invalidates_session_and_pending_signature",
+    "old_session_rejected_after_reinsert_and_restart",
+    "existing_signature_replay_is_identical_after_restart"
+  ],
+  "status": "passed",
+  "accounts": [
+    {
+      "evm": "0xE1894012E49830Bb4e5DCF7aBd841fbFE12885fb",
+      "evm_path": "m/44'/60'/0'/0/0",
+      "index": 0,
+      "solana": "F8RSu64bvLjL1aTBjBRYoaPJudKawSaYmvkjTY9nRFTF",
+      "solana_path": "m/44'/501'/0'/0'"
+    },
+    {
+      "evm": "0x0Dc15fc8F2F139C42A8921B725AC22Dbc02a4770",
+      "evm_path": "m/44'/60'/0'/0/1",
+      "index": 1,
+      "solana": "41qDA9hLhAswpSkrWEjGKYhua46gRsaSotF3NubJjCGS",
+      "solana_path": "m/44'/501'/1'/0'"
+    },
+    {
+      "evm": "0x9725e953F1EeEeb71cF03d7a719EDFc3Ba12dAf8",
+      "evm_path": "m/44'/60'/0'/0/2",
+      "index": 2,
+      "solana": "FzP2f6Se8exKvEmgQQnNtrM3EmZxz6DD6urgGqZbNmGA",
+      "solana_path": "m/44'/501'/2'/0'"
+    }
+  ],
+  "finishedAt": "2026-11-02T15:16:15.090Z",
+  "createdUsbKeyCount": 4
+}
