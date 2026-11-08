@@ -1,55 +1,49 @@
 # Coldhold Desktop
 
-An English-language local wallet with password + USB unlocking. The Windows installer includes the app, local backend and native signer. No terminal, Node.js, Rust, Docker, server subscription or API key is needed.
+Coldhold 0.4.0 is an English-language wallet with password + USB unlocking and the website’s charcoal and orange colors. The application, local backend and native signer are included: no terminal, Node.js, Rust, Docker, server subscription or API key is required.
 
-**[Download Coldhold for Windows x64 — 0.4.0-beta.1 (.exe)](https://github.com/nish1-arch/coldhold-downloads/releases/download/v0.4.0-beta.1/Coldhold-0.4.0-beta.1-win-x64.exe)**
+- **[Download for Windows x64 (.exe)](https://github.com/nish1-arch/coldhold-downloads/releases/download/v0.4.0/Coldhold-0.4.0-win-x64.exe)**
+- **[Download for Mac with Apple Silicon (.dmg)](https://github.com/nish1-arch/coldhold-downloads/releases/download/v0.4.0/Coldhold-0.4.0-mac-arm64.dmg)**
+- [Release notes, checksums and verification](https://github.com/nish1-arch/coldhold-downloads/releases/tag/v0.4.0)
 
-**[Download Coldhold for Mac with Apple Silicon — 0.4.0-beta.1 (.dmg)](https://github.com/nish1-arch/coldhold-downloads/releases/download/v0.4.0-beta.1/Coldhold-0.4.0-beta.1-mac-arm64.dmg)**
+On Windows, run the installer and open Coldhold from the desktop or Start menu. On an M-series Mac, open the DMG and drag Coldhold to Applications. Close Coldhold before installing an update. Intel Mac and Linux packages have not been updated for this release.
 
-[Release notes and verification](https://github.com/nish1-arch/coldhold-downloads/releases/tag/v0.4.0-beta.1). The app uses the website's charcoal background, light text and orange accents. Open the installer, choose a directory, then launch Coldhold from the desktop or Start menu.
+## Three supported networks
 
-On a Mac with an M-series chip, open the DMG and drag Coldhold to Applications. The Mac build uses an ad-hoc signature and has not been notarized by Apple; macOS may block it. This release does not include an updated Intel Mac or Linux package.
+| Network | Native asset | Connection |
+| --- | --- | --- |
+| Solana mainnet | SOL | Official public Solana RPC; selected by default |
+| Elysium, chain 99901 | HYPE | Free Eleos community RPC, enabled |
+| HyperEVM, chain 999 | HYPE | Official public Hyperliquid RPC, enabled |
 
-## Networks
+Elysium uses `https://node.eleos.fun` and the explorer `https://elysiumexplore.com`. The provider publishes both in [Eleos documentation](https://eleos.fun/docs) and its [RPC reference](https://elysiumexplore.com/api-docs). During the launch window, signed transactions can wait for delivery through the HyperEVM inbox. This is a community connection with rate limits and no Coldhold uptime guarantee. A pending or unknown result should be checked using the saved operation; a new payment is a separate transaction.
 
-| Network  | Status in this version                                     | Assets                                              |
-| -------- | ---------------------------------------------------------- | --------------------------------------------------- |
-| Solana   | Available; selected by default                             | SOL and supported standard SPL tokens               |
-| HyperEVM | Available; chain ID 999                                    | HYPE and explicitly selected standard ERC-20 tokens |
-| Elysium  | Awaiting its official free public RPC; disabled in the app | Planned HYPE/ERC-20 support on chain ID 99901       |
+Elysium and HyperEVM have separate balances. Coldhold does not bridge between them or provide HyperCore exchange trading. Development networks are absent from the desktop interface and cannot be used through its saved-transfer actions.
 
-Development networks are not shown or usable through the desktop interface. Elysium's official connection documentation has published its mainnet chain ID, but still marks the public RPC and explorer as coming soon. The app does not substitute another network or silently use a paid provider. [Official Elysium connection details](https://elysium.kinetiq.xyz/docs/connecting-to-elysium)
+The wallet supports SOL/standard SPL transfers, HYPE/standard ERC-20 transfers, balances, token metadata, saved operations and transaction status. EVM history covers operations recorded by this app; automatic discovery of every token and complete external EVM history are not included. Token-2022 extensions are unsupported.
 
-The Coldhold project token and its pool belong on Elysium. They have **not been deployed**. Local contract tests are not proof of a live public deployment. HYPE on HyperEVM and HYPE on Elysium have separate balances; sending to the same address does not bridge between them. HyperCore exchange trading and bridging are not included.
+The Coldhold project token and pool belong on Elysium and **are not deployed**. Enabling a wallet RPC does not deploy launch contracts. The separate advanced Solana token/pool tools are for other tokens.
 
-## First launch
+## Free local operation
 
-1. Connect a real USB flash drive and select it explicitly. The app does not format it or change unrelated files.
-2. Create a wallet, record the recovery phrase offline, confirm it and set a password. Existing phrases can be recovered in the app.
-3. Unlock with the matching USB and password. Sessions expire after five minutes. Observed USB removal or changed key material blocks further signing and invalidates pending approval.
-4. Choose the network and account, review the recipient, amount and fees, then approve the separate native confirmation dialog.
-5. If a send has an unknown result, reopen the saved operation and check its status before creating another payment. Retries reuse the existing signature.
+The backend runs on the user's computer without a paid service or embedded provider credentials. Public RPC endpoints can be rate-limited or unavailable. Blockchain transfers still require the user's own SOL or HYPE for network fees. The app does not purchase services or silently switch to a paid provider.
 
-A normal USB flash drive is not a hardware wallet: its secret file can be copied, and malware running as the user can compromise an unlocked wallet. Keep the recovery phrase separately. Settings provides password changes, USB-key rotation and recovery with address verification.
+## Wallet and data
 
-## Free operation
+Connect a real USB drive, create or recover a wallet, record the recovery phrase offline, and unlock with the matching USB and password. The app does not format the drive or modify unrelated files. Sessions expire after five minutes; observed USB removal or changed secret material invalidates the session and pending approval. Each transfer needs separate native confirmation.
 
-The app and backend run locally without subscriptions or paid APIs. Public RPC endpoints have rate and availability limits. **Blockchain transactions still require network fees and the user's own funds.** Installation and automated checks do not buy assets or move real funds.
+A USB flash drive is not a hardware wallet: its secret file can be copied, and malware running as the user can compromise an unlocked wallet. Keep the recovery phrase separately. No independent security audit has been completed.
 
-This is an experimental beta, without an independent security audit or a purchased publisher certificate. Windows may show an unsigned-app reputation warning. Do not disable system-wide security protections. Tests do not establish suitability for storing material funds.
+Wallet data lives outside the installation folder: `%APPDATA%/Coldhold` on Windows and `~/Library/Application Support/Coldhold` on macOS. The Windows uninstaller preserves it. There is no automatic updater. Existing vault backups retain their original password and USB material.
 
-## Data and updates
+## Verification and distribution
 
-Wallet data is stored separately in `%APPDATA%/Coldhold` on Windows and `~/Library/Application Support/Coldhold` on macOS. Close the app before installing a newer version. The Windows uninstaller preserves the application data directory. Keep backups; old encrypted vault backups still use their original password and USB material. There is no automatic updater.
+The release includes `verification.json`, `SHA256SUMS.txt` and actual packaged-app/installer reports. They distinguish local-chain execution from public RPC reads and simulation. No real-funds mainnet transaction was broadcast during verification.
 
-The wallet supports bounded balances/history, saved transfer reviews, transaction status and immutable retries. Complete EVM wallet history and automatic discovery of every ERC-20 are not provided. Token-2022 extensions are not supported. The advanced Solana token/pool form requires explicit JSON configuration and separate approval; it does not launch the Coldhold project token or provide a trading interface.
+Windows installation, same-version reinstallation, Unicode paths, shortcuts, application launch, uninstall and profile retention were tested on a Windows Server 2022 runner. Physical USB removal/reinsertion on Windows and a separate Windows 10/11 manual GUI session remain unverified. Cross-version upgrade testing is not claimed.
 
-## Verification
+Windows packages are unsigned; Mac packages have an ad-hoc signature without Apple notarization. OS reputation or security controls may warn or block. Removing the pre-release version suffix does not change these facts or establish an independent audit.
 
-The release contains `SHA256SUMS.txt`, `verification.json` and installer smoke reports. Those records identify the source revision and distinguish local-chain tests, actual Windows API/installer tests and public read-only RPC checks.
+[Older releases](https://github.com/nish1-arch/coldhold-downloads/releases) contain earlier configurations. Use the links above for all three enabled networks. GitHub's Source code ZIP is not an application installer.
 
-Physical USB removal/reinsertion on Windows remains unverified: software and CI tests cannot replace a real Windows USB device. A previous Kingston hardware test ran on macOS. No real mainnet transfer or independent security audit is claimed.
-
-[Older Windows packages](https://github.com/nish1-arch/coldhold-downloads/releases/tag/v0.3.0-beta.2) and [older macOS/Linux packages](https://github.com/nish1-arch/coldhold-downloads/releases/tag/v0.2.0-beta.1) are historical builds and do not contain all changes described above. Do not download GitHub's **Source code.zip** to install Coldhold.
-
-Coldhold is distributed under the [MIT license](LICENSE). Bundled third-party components retain their own licenses. See [DEPENDENCIES.md](DEPENDENCIES.md) for dependency policy and recorded advisories.
+Coldhold is distributed under the [MIT license](LICENSE). Bundled components retain their own licenses; see [DEPENDENCIES.md](DEPENDENCIES.md).

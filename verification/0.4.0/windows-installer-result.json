@@ -1,0 +1,12 @@
+{
+  "physicalUsb": "not-tested",
+  "unicodeAndSpacesInInstallPath": "passed",
+  "reinstallSameVersion": "passed",
+  "desktopShortcut": "passed",
+  "install": "passed",
+  "crossVersionUpgrade": "not-tested",
+  "startMenuShortcut": "passed",
+  "uninstall": "passed",
+  "profileDataPreserved": "passed",
+  "windowsInstaller": "passed"
+}
