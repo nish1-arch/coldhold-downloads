@@ -1,0 +1,111 @@
+{
+  "version": "0.3.0-beta.2",
+  "verified_at_utc": "2026-11-08T21:02:36.675781+00:00",
+  "scope": "Windows x64 installer; website palette; no-terminal local runtime",
+  "source_commit": "20b782d08eeba4ce5edb6f9bb3026fda5dc5b9ec",
+  "installer": {
+    "name": "Coldhold-0.3.0-beta.2-win-x64.exe",
+    "size_bytes": 131696286,
+    "sha256": "68ab4bd9703d61bcbeb4dffa8428c90a85cccc733fed95e2777906c48b2f9fd2",
+    "publisher_signature": "unsigned"
+  },
+  "ci": {
+    "url": "https://github.com/nish1-arch/coldhold-backend/actions/runs/42522302211",
+    "conclusion": "success",
+    "jobs": [
+      {
+        "name": "node-and-chains",
+        "conclusion": "success"
+      },
+      {
+        "name": "rust (macos-15)",
+        "conclusion": "success"
+      },
+      {
+        "name": "rust (ubuntu-latest)",
+        "conclusion": "success"
+      },
+      {
+        "name": "rust (windows-latest)",
+        "conclusion": "success"
+      },
+      {
+        "name": "security",
+        "conclusion": "success"
+      }
+    ]
+  },
+  "packaging": {
+    "url": "https://github.com/nish1-arch/coldhold-backend/actions/runs/42522309528",
+    "conclusion": "success",
+    "runner": "windows-2022 (Windows Server 2022 x64)",
+    "installed_exe_test": "success"
+  },
+  "installed_application": {
+    "desktopSmoke": "passed",
+    "platform": "win32",
+    "arch": "x64",
+    "packaged": true,
+    "version": "0.3.0-beta.2",
+    "node": "24.22.1",
+    "electron": "45.2.1",
+    "isolation": {
+      "node": "undefined",
+      "require": "undefined",
+      "bridge": "function",
+      "origin": "coldhold://app"
+    },
+    "usb": {
+      "devices": []
+    },
+    "freeRpc": true,
+    "restart": "passed",
+    "physicalUsb": "not-tested"
+  },
+  "packaged_assets": {
+    "version": "0.3.0-beta.2",
+    "packagedAssetsMatchSource": true,
+    "files": {
+      "desktop/style.css": {
+        "sha256": "5dcfa29665b5a1d5b9bcbc5fd70d6244135d3fa3634dd67cb5f06e88405d1741",
+        "comparison": "text with CRLF normalized to LF"
+      },
+      "desktop/icon.svg": {
+        "sha256": "60e07d0238fc9221c5c7c6e39937b572ca08df5b8b1a94e3c7fe20109d63df99",
+        "comparison": "text with CRLF normalized to LF"
+      },
+      "desktop/icon.png": {
+        "sha256": "aacc80a97e64cfb62b2f3be01988130702bf3f17570f5ab033e32f839c40d7e2",
+        "comparison": "byte-for-byte"
+      },
+      "desktop/index.html": {
+        "sha256": "7ce79bd4e5a8ea3d9f27fcfeb71d3635faae00355ad973522075a4ab2c2aa685",
+        "comparison": "text with CRLF normalized to LF"
+      },
+      "desktop/renderer.js": {
+        "sha256": "31a0ad7ce5f7542c7a5c808cc8740167c606598fcb727e2e603a3b9ccfd856c3",
+        "comparison": "text with CRLF normalized to LF"
+      },
+      "dist/packages/desktop/src/main.js": {
+        "sha256": "706f480918dcf2b57a95e30f6587227699d6e854dfc4fd73a0ac69d45e37610d",
+        "comparison": "text with CRLF normalized to LF"
+      }
+    },
+    "nativeWindowsSignerIncluded": true
+  },
+  "installation": {
+    "type": "NSIS wizard",
+    "desktop_shortcut": true,
+    "start_menu_shortcut": true,
+    "external_runtime_required": false,
+    "hosted_backend_required": false,
+    "paid_api_key_required": false
+  },
+  "limitations": [
+    "Unsigned beta: SmartScreen or corporate policy can warn or block.",
+    "Physical USB on Windows has not been verified.",
+    "No separate manual Windows 10/11 GUI session was performed; automated installation and launch ran on Windows Server 2022.",
+    "Coldhold Elysium testnet token/pool contracts are not deployed; live token/pool testing remains pending.",
+    "No independent security audit or mainnet acceptance test is claimed."
+  ]
+}
