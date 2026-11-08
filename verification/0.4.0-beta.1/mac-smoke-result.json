@@ -1,0 +1,41 @@
+{
+  "desktopSmoke": "passed",
+  "platform": "darwin",
+  "arch": "arm64",
+  "packaged": true,
+  "version": "0.4.0-beta.1",
+  "node": "24.22.1",
+  "electron": "45.2.1",
+  "isolation": {
+    "node": "undefined",
+    "require": "undefined",
+    "bridge": "function",
+    "origin": "coldhold://app"
+  },
+  "ui": {
+    "language": "en",
+    "english": true,
+    "developmentLabels": false,
+    "selectedNetwork": "solana-mainnet",
+    "networks": [
+      {
+        "id": "hyperevm",
+        "disabled": false
+      },
+      {
+        "id": "elysium",
+        "disabled": true
+      },
+      {
+        "id": "solana-mainnet",
+        "disabled": false
+      }
+    ]
+  },
+  "usb": {
+    "devices": []
+  },
+  "freeRpc": true,
+  "restart": "passed",
+  "physicalUsb": "not-tested"
+}

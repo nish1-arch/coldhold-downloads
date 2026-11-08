@@ -1,62 +1,55 @@
 # Coldhold Desktop
 
-Локальный кошелёк для EVM и Solana с паролем и USB-флешкой. Приложение включает собственный backend и подписант: терминал, Node.js, Rust, Docker, сервер и API-ключи пользователю не нужны.
+An English-language local wallet with password + USB unlocking. The Windows installer includes the app, local backend and native signer. No terminal, Node.js, Rust, Docker, server subscription or API key is needed.
 
-**[Скачать Coldhold для Windows x64 — 0.3.0-beta.2 (.exe)](https://github.com/nish1-arch/coldhold-downloads/releases/download/v0.3.0-beta.2/Coldhold-0.3.0-beta.2-win-x64.exe)**
+**[Download Coldhold for Windows x64 — 0.4.0-beta.1 (.exe)](https://github.com/nish1-arch/coldhold-downloads/releases/download/v0.4.0-beta.1/Coldhold-0.4.0-beta.1-win-x64.exe)**
 
-[Описание новой Windows-версии и результаты проверки](https://github.com/nish1-arch/coldhold-downloads/releases/tag/v0.3.0-beta.2). Цвета приложения совпадают с сайтом: графитовый фон, светлый текст и оранжевые акценты.
+**[Download Coldhold for Mac with Apple Silicon — 0.4.0-beta.1 (.dmg)](https://github.com/nish1-arch/coldhold-downloads/releases/download/v0.4.0-beta.1/Coldhold-0.4.0-beta.1-mac-arm64.dmg)**
 
-[Установщики 0.2.0-beta.1 для Mac, Linux и предыдущая Windows-версия](https://github.com/nish1-arch/coldhold-downloads/releases/tag/v0.2.0-beta.1).
+[Release notes and verification](https://github.com/nish1-arch/coldhold-downloads/releases/tag/v0.4.0-beta.1). The app uses the website's charcoal background, light text and orange accents. Open the installer, choose a directory, then launch Coldhold from the desktop or Start menu.
 
-Это публичная beta для тестирования. Проверки не заменяют независимый аудит; релиз не заявляет готовность к хранению значительных реальных средств.
+On a Mac with an M-series chip, open the DMG and drag Coldhold to Applications. The Mac build uses an ad-hoc signature and has not been notarized by Apple; macOS may block it. This release does not include an updated Intel Mac or Linux package.
 
-| Компьютер                                 | Файл в релизе     | Установка                                                                 |
-| ----------------------------------------- | ----------------- | ------------------------------------------------------------------------- |
-| Mac с Apple Silicon (M1/M2/M3/M4 и новее) | `mac-arm64.dmg`   | Открыть DMG, перетащить Coldhold в «Программы»                            |
-| Mac с процессором Intel                   | `mac-x64.dmg`     | Открыть DMG, перетащить Coldhold в «Программы»                            |
-| Windows x64                               | `win-x64.exe`     | Открыть установщик, затем Coldhold в меню «Пуск»                          |
-| Ubuntu/Debian x64                         | `linux-amd64.deb` | Открыть в системном установщике пакетов, затем Coldhold в меню приложений |
+## Networks
 
-Для macOS требуется версия 13 или новее (минимум объявлен самим пакетом); CI проверяет macOS 15. Linux-пакет проверен на Ubuntu 22.04 x64.
+| Network  | Status in this version                                     | Assets                                              |
+| -------- | ---------------------------------------------------------- | --------------------------------------------------- |
+| Solana   | Available; selected by default                             | SOL and supported standard SPL tokens               |
+| HyperEVM | Available; chain ID 999                                    | HYPE and explicitly selected standard ERC-20 tokens |
+| Elysium  | Awaiting its official free public RPC; disabled in the app | Planned HYPE/ERC-20 support on chain ID 99901       |
 
-В названии файла также есть номер версии. ZIP для macOS — альтернативная упаковка того же приложения. `SHA256SUMS.txt` содержит контрольные суммы установщиков. **Не скачивайте `Source code.zip` для установки приложения:** этот репозиторий содержит страницу загрузок и отчёты.
+Development networks are not shown or usable through the desktop interface. Elysium's official connection documentation has published its mainnet chain ID, but still marks the public RPC and explorer as coming soon. The app does not substitute another network or silently use a paid provider. [Official Elysium connection details](https://elysium.kinetiq.xyz/docs/connecting-to-elysium)
 
-У beta нет сертификата издателя Windows и Apple Developer ID/notarization. На macOS используется ad-hoc подпись. ОС может показать предупреждение или заблокировать запуск. Если ОС предлагает штатное одобрение приложения, решение принимает пользователь; отключать системную защиту для Coldhold не требуется. Установка и запуск проверены на версиях ОС, указанных в отчёте релиза; совместимость со всеми версиями и корпоративными политиками не обещается.
+The Coldhold project token and its pool belong on Elysium. They have **not been deployed**. Local contract tests are not proof of a live public deployment. HYPE on HyperEVM and HYPE on Elysium have separate balances; sending to the same address does not bridge between them. HyperCore exchange trading and bridging are not included.
 
-## Первый запуск
+## First launch
 
-1. Откройте Coldhold и подключите настоящую USB-флешку. Нажмите «Обновить список» и выберите её явно. Другие файлы не удаляются, форматирование не выполняется.
-2. Нажмите «Создать кошелёк». Запишите резервную фразу отдельно, затем подтвердите её и задайте пароль в приложении. Никому не отправляйте фразу или пароль. Для существующей фразы используйте восстановление.
-3. Для разблокировки нужны выбранная USB и пароль. Сессия действует 5 минут; извлечение USB запрещает дальнейшие подписи.
-4. В Windows 0.3.0-beta.2 по умолчанию выбрана Elysium Testnet (99801), в предыдущей версии 0.2 — Solana devnet. Используйте тестовые монеты из faucet выбранной сети. Вывод HYPE с биржи в HyperEVM mainnet не пополняет Elysium Testnet.
-5. Перед переводом проверьте сеть, адрес, сумму и отдельное окно подтверждения подписи. При неизвестном результате откройте сохранённую операцию и проверьте её статус, прежде чем создавать новый перевод.
+1. Connect a real USB flash drive and select it explicitly. The app does not format it or change unrelated files.
+2. Create a wallet, record the recovery phrase offline, confirm it and set a password. Existing phrases can be recovered in the app.
+3. Unlock with the matching USB and password. Sessions expire after five minutes. Observed USB removal or changed key material blocks further signing and invalidates pending approval.
+4. Choose the network and account, review the recipient, amount and fees, then approve the separate native confirmation dialog.
+5. If a send has an unknown result, reopen the saved operation and check its status before creating another payment. Retries reuse the existing signature.
 
-Обычная флешка не является аппаратным кошельком: её секретный файл можно скопировать, а заражённый компьютер может перехватить данные разблокированного кошелька. Фраза позволяет восстановить доступ при потере компьютера/USB. В настройках доступны смена пароля, замена USB-ключа и восстановление существующего кошелька с проверкой совпадения адресов.
+A normal USB flash drive is not a hardware wallet: its secret file can be copied, and malware running as the user can compromise an unlocked wallet. Keep the recovery phrase separately. Settings provides password changes, USB-key rotation and recovery with address verification.
 
-## Бесплатный запуск
+## Free operation
 
-Кошелёк, локальный backend и подписант работают на компьютере пользователя. Подписка, платный хостинг, NanoGPT и платные RPC не нужны. Используются публичные бесплатные RPC; у них бывают лимиты и перебои. Интернет нужен для получения сетевых данных и отправки транзакций.
+The app and backend run locally without subscriptions or paid APIs. Public RPC endpoints have rate and availability limits. **Blockchain transactions still require network fees and the user's own funds.** Installation and automated checks do not buy assets or move real funds.
 
-**Бесплатное приложение не отменяет комиссии блокчейна.** В mainnet пользователь оплачивает комиссии, создание аккаунтов и вносит собственную ликвидность. Бесплатная проверка проводится в тестовых сетях. Никаких покупок или mainnet-транзакций при установке и автотестах нет.
+This is an experimental beta, without an independent security audit or a purchased publisher certificate. Windows may show an unsigned-app reputation warning. Do not disable system-wide security protections. Tests do not establish suitability for storing material funds.
 
-## Возможности и границы beta
+## Data and updates
 
-- Создание, восстановление, несколько аккаунтов, USB + пароль, блокировка, смена пароля и USB.
-- Балансы, подготовка и подтверждение переводов, статусы и журнал сохранённых операций. Повтор отправки сохранённой операции использует те же подписанные байты.
-- EVM: нативная монета и явно указанные ERC-20; полного автоматического обнаружения всех токенов и всей истории нет. В версии 0.3 добавлена Elysium Testnet с HYPE; Elysium mainnet не включена.
-- Контракты Coldhold для выпуска токенов и создания пулов в публичной Elysium Testnet ещё не развёрнуты. Локальные проверки этих контрактов не означают готовность запуска токена/пула в публичной сети.
-- Solana: SOL и поддерживаемые стандартные SPL-токены; ограничения истории и токенов показываются в приложении.
-- Запуск токена и Raydium CPMM-пула — **расширенный режим с JSON-конфигурацией**. Нужны собственные корректные параметры и metadata URI; это не интерфейс обмена/трейдинга.
-- Закрытие окна останавливает backend. Автоматического обновления нет: закройте приложение и установите новую версию поверх старой.
+Wallet data is stored separately in `%APPDATA%/Coldhold` on Windows and `~/Library/Application Support/Coldhold` on macOS. Close the app before installing a newer version. The Windows uninstaller preserves the application data directory. Keep backups; old encrypted vault backups still use their original password and USB material. There is no automatic updater.
 
-Данные хранятся отдельно от установщика: Windows `%APPDATA%/Coldhold`, macOS `~/Library/Application Support/Coldhold`, Linux `$XDG_CONFIG_HOME/Coldhold` (обычно `~/.config/Coldhold`). Сохраняйте эту папку при обновлениях. Старые резервные копии зашифрованного vault остаются доступны со своими прежними паролем и USB.
+The wallet supports bounded balances/history, saved transfer reviews, transaction status and immutable retries. Complete EVM wallet history and automatic discovery of every ERC-20 are not provided. Token-2022 extensions are not supported. The advanced Solana token/pool form requires explicit JSON configuration and separate approval; it does not launch the Coldhold project token or provide a trading interface.
 
-## Проверки
+## Verification
 
-Отчёт `verification.json` в релизе содержит точную ревизию исходников, результаты CI, запуск установленных пакетов и границы проверки. На реальной Kingston под macOS проверены 12 сценариев, включая извлечение/возврат USB, отклонение старой сессии, восстановление адресов и неизменность повторной подписи. Тестовые ключи удалены; транзакции этого аппаратного теста не отправлялись.
+The release contains `SHA256SUMS.txt`, `verification.json` and installer smoke reports. Those records identify the source revision and distinguish local-chain tests, actual Windows API/installer tests and public read-only RPC checks.
 
-Физические USB на Windows/Linux и восстановление на второй физической флешке пока не проверены. Независимый аудит и приёмочные mainnet-тесты не проведены. Исходный репозиторий остаётся private; этот репозиторий распространяет готовые пакеты, документацию и результаты проверки.
+Physical USB removal/reinsertion on Windows remains unverified: software and CI tests cannot replace a real Windows USB device. A previous Kingston hardware test ran on macOS. No real mainnet transfer or independent security audit is claimed.
 
-Подробности автоматической проверки зависимостей и сохранённых информационных предупреждений: [DEPENDENCIES.md](DEPENDENCIES.md).
+[Older Windows packages](https://github.com/nish1-arch/coldhold-downloads/releases/tag/v0.3.0-beta.2) and [older macOS/Linux packages](https://github.com/nish1-arch/coldhold-downloads/releases/tag/v0.2.0-beta.1) are historical builds and do not contain all changes described above. Do not download GitHub's **Source code.zip** to install Coldhold.
 
-Приложение Coldhold распространяется по MIT, см. [LICENSE](LICENSE). В составе пакетов используются сторонние компоненты со своими лицензиями.
+Coldhold is distributed under the [MIT license](LICENSE). Bundled third-party components retain their own licenses. See [DEPENDENCIES.md](DEPENDENCIES.md) for dependency policy and recorded advisories.

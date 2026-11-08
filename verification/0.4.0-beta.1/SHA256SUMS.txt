@@ -1,0 +1,3 @@
+6a21880da15eacc278ae84cbab1d101db088165d4fcb1afbcaef556a4495f94e  Coldhold-0.4.0-beta.1-win-x64.exe
+1d2e9a61cf58756ddaccf8620c6dd57eadc24d6eebdabb5102412d93da131ef3  Coldhold-0.4.0-beta.1-mac-arm64.dmg
+058361288918416ad3579d6dc52895efb1a03c8608ba1619e2559e538c0a7ceb  Coldhold-0.4.0-beta.1-mac-arm64.zip

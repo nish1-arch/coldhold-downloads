@@ -1,0 +1,335 @@
+{
+  "version": "0.4.0-beta.1",
+  "verifiedAt": "2026-11-08T22:35:09.991140+00:00",
+  "sourceCommit": "ae5acec56c467775c16a90f99588dddee60a48b0",
+  "ci": {
+    "conclusion": "success",
+    "headSha": "ae5acec56c467775c16a90f99588dddee60a48b0",
+    "jobs": [
+      {
+        "name": "security",
+        "conclusion": "success",
+        "url": "https://github.com/nish1-arch/coldhold-backend/actions/runs/42529989198/job/128881831313"
+      },
+      {
+        "name": "rust (ubuntu-latest)",
+        "conclusion": "success",
+        "url": "https://github.com/nish1-arch/coldhold-backend/actions/runs/42529989198/job/128881831517"
+      },
+      {
+        "name": "node-and-chains",
+        "conclusion": "success",
+        "url": "https://github.com/nish1-arch/coldhold-backend/actions/runs/42529989198/job/128881831541"
+      },
+      {
+        "name": "rust (windows-latest)",
+        "conclusion": "success",
+        "url": "https://github.com/nish1-arch/coldhold-backend/actions/runs/42529989198/job/128881831544"
+      },
+      {
+        "name": "rust (macos-15)",
+        "conclusion": "success",
+        "url": "https://github.com/nish1-arch/coldhold-backend/actions/runs/42529989198/job/128881831583"
+      }
+    ],
+    "status": "completed",
+    "url": "https://github.com/nish1-arch/coldhold-backend/actions/runs/42529989198"
+  },
+  "packaging": {
+    "conclusion": "success",
+    "headSha": "ae5acec56c467775c16a90f99588dddee60a48b0",
+    "jobs": [
+      {
+        "name": "Package windows-x64",
+        "conclusion": "success",
+        "url": "https://github.com/nish1-arch/coldhold-backend/actions/runs/42529989541/job/128881834956"
+      }
+    ],
+    "status": "completed",
+    "url": "https://github.com/nish1-arch/coldhold-backend/actions/runs/42529989541"
+  },
+  "windowsRunner": "Windows Server 2022 x64",
+  "artifacts": [
+    {
+      "name": "Coldhold-0.4.0-beta.1-win-x64.exe",
+      "sha256": "6a21880da15eacc278ae84cbab1d101db088165d4fcb1afbcaef556a4495f94e",
+      "bytes": 131673936
+    },
+    {
+      "name": "Coldhold-0.4.0-beta.1-mac-arm64.dmg",
+      "sha256": "1d2e9a61cf58756ddaccf8620c6dd57eadc24d6eebdabb5102412d93da131ef3",
+      "bytes": 137515765
+    },
+    {
+      "name": "Coldhold-0.4.0-beta.1-mac-arm64.zip",
+      "sha256": "058361288918416ad3579d6dc52895efb1a03c8608ba1619e2559e538c0a7ceb",
+      "bytes": 133284797
+    }
+  ],
+  "publisherSignature": {
+    "windows": "unsigned",
+    "mac": "ad-hoc; not Apple notarized"
+  },
+  "installedWindowsApplication": {
+    "install": {
+      "desktopSmoke": "passed",
+      "platform": "win32",
+      "arch": "x64",
+      "packaged": true,
+      "version": "0.4.0-beta.1",
+      "node": "24.22.1",
+      "electron": "45.2.1",
+      "isolation": {
+        "node": "undefined",
+        "require": "undefined",
+        "bridge": "function",
+        "origin": "coldhold://app"
+      },
+      "ui": {
+        "language": "en",
+        "english": true,
+        "developmentLabels": false,
+        "selectedNetwork": "solana-mainnet",
+        "networks": [
+          {
+            "id": "hyperevm",
+            "disabled": false
+          },
+          {
+            "id": "elysium",
+            "disabled": true
+          },
+          {
+            "id": "solana-mainnet",
+            "disabled": false
+          }
+        ]
+      },
+      "usb": {
+        "devices": []
+      },
+      "freeRpc": true,
+      "restart": "passed",
+      "physicalUsb": "not-tested"
+    },
+    "reinstall": {
+      "desktopSmoke": "passed",
+      "platform": "win32",
+      "arch": "x64",
+      "packaged": true,
+      "version": "0.4.0-beta.1",
+      "node": "24.22.1",
+      "electron": "45.2.1",
+      "isolation": {
+        "node": "undefined",
+        "require": "undefined",
+        "bridge": "function",
+        "origin": "coldhold://app"
+      },
+      "ui": {
+        "language": "en",
+        "english": true,
+        "developmentLabels": false,
+        "selectedNetwork": "solana-mainnet",
+        "networks": [
+          {
+            "id": "hyperevm",
+            "disabled": false
+          },
+          {
+            "id": "elysium",
+            "disabled": true
+          },
+          {
+            "id": "solana-mainnet",
+            "disabled": false
+          }
+        ]
+      },
+      "usb": {
+        "devices": []
+      },
+      "freeRpc": true,
+      "restart": "passed",
+      "physicalUsb": "not-tested"
+    }
+  },
+  "installerLifecycle": {
+    "windowsInstaller": "passed",
+    "reinstallSameVersion": "passed",
+    "crossVersionUpgrade": "not-tested",
+    "unicodeAndSpacesInInstallPath": "passed",
+    "profileDataPreserved": "passed",
+    "desktopShortcut": "passed",
+    "install": "passed",
+    "uninstall": "passed",
+    "physicalUsb": "not-tested",
+    "startMenuShortcut": "passed"
+  },
+  "macReleaseZipApplication": {
+    "desktopSmoke": "passed",
+    "platform": "darwin",
+    "arch": "arm64",
+    "packaged": true,
+    "version": "0.4.0-beta.1",
+    "node": "24.22.1",
+    "electron": "45.2.1",
+    "isolation": {
+      "node": "undefined",
+      "require": "undefined",
+      "bridge": "function",
+      "origin": "coldhold://app"
+    },
+    "ui": {
+      "language": "en",
+      "english": true,
+      "developmentLabels": false,
+      "selectedNetwork": "solana-mainnet",
+      "networks": [
+        {
+          "id": "hyperevm",
+          "disabled": false
+        },
+        {
+          "id": "elysium",
+          "disabled": true
+        },
+        {
+          "id": "solana-mainnet",
+          "disabled": false
+        }
+      ]
+    },
+    "usb": {
+      "devices": []
+    },
+    "freeRpc": true,
+    "restart": "passed",
+    "physicalUsb": "not-tested"
+  },
+  "packagedSourceInspection": {
+    "windows": {
+      "packagedSourceInspection": "passed",
+      "comparedWithCommit": "ae5acec56c467775c16a90f99588dddee60a48b0",
+      "version": "0.4.0-beta.1",
+      "checkedAt": "2026-11-08T22:31:01.913Z",
+      "normalizedPackagedSourceHashes": {
+        "desktop/index.html": "85c185aff358875d4aa7b166ca1f1d9caa569c208e521219610a7fac805196c8",
+        "desktop/renderer.js": "021f97247ffe66bbbb4eed65b43cf9982c7458d526c1045470d527b50e9ab3bd",
+        "desktop/style.css": "a039df9e476529b973631be9dddbc1edca7db713b7d7ecf1b90905a2fe6a5b84",
+        "desktop/preload.cjs": "942135915d0dc615784fefdb22af23837f626840bcb13a3990ed68058023f62e",
+        "dist/packages/desktop/src/main.js": "89c8a17ce15947f597263b5f1f443cde7a7ed75f2469a286e8e72e15222b6be9",
+        "dist/packages/desktop/src/controller.js": "7f61a038ed3181df9a7be864ab5bec5cafc5ff9eb09f2605f07966444ebc39ac",
+        "dist/packages/shared/src/networks.js": "b58fd499a8350c5369e903af5575f40ae1468bead4aa3a29fbe58924570f2d6f",
+        "dist/packages/shared/src/chains.js": "757906e0b1cc9453b877fa04290b74cb9e13fe68112c20eb840bdfa355ecb277",
+        "dist/packages/gateway/src/server.js": "e55f77fc0f168d78738424eb68531828577f71e517766954ef9de2039d25ba69"
+      },
+      "nativeSigner": {
+        "bytes": 6744064,
+        "sha256": "fd6eea8948407a138ae6c506566f4373d6149953a8bb31d10d936b929b273ef6"
+      }
+    },
+    "mac": {
+      "packagedSourceInspection": "passed",
+      "comparedWithCommit": "ae5acec56c467775c16a90f99588dddee60a48b0",
+      "version": "0.4.0-beta.1",
+      "checkedAt": "2026-11-08T22:26:18.194Z",
+      "normalizedPackagedSourceHashes": {
+        "desktop/index.html": "85c185aff358875d4aa7b166ca1f1d9caa569c208e521219610a7fac805196c8",
+        "desktop/renderer.js": "021f97247ffe66bbbb4eed65b43cf9982c7458d526c1045470d527b50e9ab3bd",
+        "desktop/style.css": "a039df9e476529b973631be9dddbc1edca7db713b7d7ecf1b90905a2fe6a5b84",
+        "desktop/preload.cjs": "942135915d0dc615784fefdb22af23837f626840bcb13a3990ed68058023f62e",
+        "dist/packages/desktop/src/main.js": "89c8a17ce15947f597263b5f1f443cde7a7ed75f2469a286e8e72e15222b6be9",
+        "dist/packages/desktop/src/controller.js": "7f61a038ed3181df9a7be864ab5bec5cafc5ff9eb09f2605f07966444ebc39ac",
+        "dist/packages/shared/src/networks.js": "b58fd499a8350c5369e903af5575f40ae1468bead4aa3a29fbe58924570f2d6f",
+        "dist/packages/shared/src/chains.js": "757906e0b1cc9453b877fa04290b74cb9e13fe68112c20eb840bdfa355ecb277",
+        "dist/packages/gateway/src/server.js": "e55f77fc0f168d78738424eb68531828577f71e517766954ef9de2039d25ba69"
+      },
+      "nativeSigner": {
+        "bytes": 5242752,
+        "sha256": "c24f5d9ffcf85769d1d68b550b35c7feb8f5d94f5f8244b0aa5172a4c855da9a"
+      }
+    }
+  },
+  "publicRpc": {
+    "checkedAt": "2026-11-08T21:58:02.837Z",
+    "profile": "free-public-rpc",
+    "apiKeyRequired": false,
+    "checks": [
+      {
+        "network": "hyperevm",
+        "endpoint": "https://rpc.hyperliquid.xyz/evm",
+        "status": "ok",
+        "height": "0x3066303",
+        "milliseconds": 1411
+      },
+      {
+        "network": "elysium",
+        "endpoint": null,
+        "status": "pending-public-rpc"
+      },
+      {
+        "network": "solana-mainnet",
+        "endpoint": "https://api.mainnet.solana.com",
+        "status": "ok",
+        "height": "467074277",
+        "milliseconds": 557
+      }
+    ]
+  },
+  "hyperEvmLiveCompatibility": {
+    "checkedAt": "2026-11-08T22:25:49.960Z",
+    "endpoint": "https://rpc.hyperliquid.xyz/evm",
+    "mode": "read-only; no signing or broadcasting",
+    "checks": [
+      {
+        "method": "eth_chainId",
+        "result": "0x3e7",
+        "status": "passed"
+      },
+      {
+        "method": "eth_getTransactionCount",
+        "result": "0x0",
+        "status": "passed"
+      },
+      {
+        "method": "eth_call",
+        "result": "0x",
+        "status": "passed"
+      },
+      {
+        "method": "eth_estimateGas",
+        "result": "0x5f12",
+        "status": "passed"
+      },
+      {
+        "method": "eth_maxPriorityFeePerGas",
+        "result": "0x0",
+        "status": "passed"
+      }
+    ]
+  },
+  "tests": {
+    "nodePassed": 38,
+    "nodeSkipped": 0,
+    "rust": "Workspace tests passed on Linux/macOS/Windows; real Windows ABI, error-mode and ACL tests included.",
+    "mainnetChainIds": "Native/ERC20 transfers executed with Rust signatures on local Anvil 999 and 99901, not public mainnet broadcasts. HyperEVM fixture rejects non-latest state requests.",
+    "solana": "Real SPL/metadata/Raydium bytecode executed with Rust signatures on LiteSVM.",
+    "macPackaging": "Release ZIP extracted; codesign verification and packaged app smoke passed; DMG checksum verified.",
+    "security": "CI dependency gates and secret/history scans passed."
+  },
+  "limitations": [
+    "Elysium mainnet public free RPC/explorer not yet published; disabled in app.",
+    "Coldhold project token and pool are not deployed.",
+    "Physical USB on Windows is not tested; simulated faults and Win32/installer CI do not establish hardware coverage.",
+    "No independent security audit, real-funds mainnet transfer or separate Windows 10/11 manual GUI test.",
+    "Same-version reinstall tested; cross-version upgrade not tested.",
+    "Unsigned/unnotarized beta; OS reputation or corporate controls can warn or block."
+  ],
+  "runtime": {
+    "localBackend": "free",
+    "paidHostingRequired": false,
+    "apiKeyRequired": false,
+    "networkFees": "Paid by the user for real transactions; public RPC limits apply."
+  }
+}
