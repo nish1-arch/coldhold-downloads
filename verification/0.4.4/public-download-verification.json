@@ -1,0 +1,101 @@
+{
+  "verifiedAt": "2026-11-09T17:14:41.424923+00:00",
+  "release": "https://github.com/nish1-arch/coldhold-downloads/releases/tag/v0.4.4",
+  "draft": false,
+  "assets": [
+    {
+      "asset": "LICENSE",
+      "bytes": 1078,
+      "sha256": "a0a0be4209406d44841b67a35dea97a2b57d97182995d29d1b7b3f46c89d4ec3",
+      "githubDigestMatches": true
+    },
+    {
+      "asset": "SHA256SUMS.txt",
+      "bytes": 283,
+      "sha256": "df4c5b0902e235fb013923ef6c9645efafc8cb47a98b5c85e5b9cd44a5757424",
+      "githubDigestMatches": true
+    },
+    {
+      "asset": "elWALLET-0.4.4-mac-arm64.dmg",
+      "bytes": 144468046,
+      "sha256": "22c319d022309036125338f84f71797e3543fdcf2cde6aa9ff93ef718dad5f0d",
+      "githubDigestMatches": true
+    },
+    {
+      "asset": "elWALLET-0.4.4-mac-arm64.zip",
+      "bytes": 139915497,
+      "sha256": "4a15842a043c8130d82fc1b4a5ebdabfc79802ef799e047bbdbd6162e12866a4",
+      "githubDigestMatches": true
+    },
+    {
+      "asset": "elWALLET-0.4.4-win-x64.exe",
+      "bytes": 142576381,
+      "sha256": "f36543aad48c9104faadc65d2d36c1e676449970573eae27b07501dca97acffb",
+      "githubDigestMatches": true
+    },
+    {
+      "asset": "mac-smoke-result.json",
+      "bytes": 1292,
+      "sha256": "a32f75551d5ab6e82466dd763d4044fa359d29ef8a5cde6c3f9ec55a166cfd7a",
+      "githubDigestMatches": true
+    },
+    {
+      "asset": "smoke-baseline-result.json",
+      "bytes": 1289,
+      "sha256": "044ca1ebdb096c956d46da4528b417303ff7a76df6c899323ccddcbe6e568da3",
+      "githubDigestMatches": true
+    },
+    {
+      "asset": "smoke-install-result.json",
+      "bytes": 1289,
+      "sha256": "8b84d854b86f7f2eb570b9150b374734e12dec68cc441afc7197b5e90f90d5d9",
+      "githubDigestMatches": true
+    },
+    {
+      "asset": "smoke-reinstall-result.json",
+      "bytes": 1289,
+      "sha256": "8b84d854b86f7f2eb570b9150b374734e12dec68cc441afc7197b5e90f90d5d9",
+      "githubDigestMatches": true
+    },
+    {
+      "asset": "smoke-upgrade-result.json",
+      "bytes": 1289,
+      "sha256": "8b84d854b86f7f2eb570b9150b374734e12dec68cc441afc7197b5e90f90d5d9",
+      "githubDigestMatches": true
+    },
+    {
+      "asset": "verification.json",
+      "bytes": 21895,
+      "sha256": "e957748fd35f7dc112b48ae461b8ebed93fefa5d15b27a5cbd27561f468ee589",
+      "githubDigestMatches": true
+    },
+    {
+      "asset": "windows-installer-result.json",
+      "bytes": 722,
+      "sha256": "7bfdff41297dc0b1f2eb7f5baaed25deb7d377b7d46d0765a5756bb39f791aba",
+      "githubDigestMatches": true
+    }
+  ],
+  "anonymousDownloads": [
+    {
+      "asset": "elWALLET-0.4.4-mac-arm64.dmg",
+      "anonymousHttpStatus": 206,
+      "contentMatchesLocal": true
+    },
+    {
+      "asset": "elWALLET-0.4.4-mac-arm64.zip",
+      "anonymousHttpStatus": 206,
+      "contentMatchesLocal": true
+    },
+    {
+      "asset": "elWALLET-0.4.4-win-x64.exe",
+      "anonymousHttpStatus": 206,
+      "contentMatchesLocal": true
+    },
+    {
+      "asset": "SHA256SUMS.txt",
+      "anonymousHttpStatus": 200,
+      "contentMatchesLocal": true
+    }
+  ]
+}
