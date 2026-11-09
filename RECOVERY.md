@@ -35,4 +35,4 @@ An arbitrary valid phrase is not proof that you restored the original wallet. If
 
 Close elWALLET, then run the new Windows installer or replace the Mac application. The wallet profile is stored separately from the installation. The Windows uninstaller preserves it. Always retain your offline recovery phrase and profile backup. There is no automatic updater.
 
-Version 0.4.3 has an automated Windows upgrade check from 0.4.0, using an artificial profile marker. It is not a physical USB or real-wallet migration test. Physical Windows USB behavior and a separate Windows 10/11 manual session still require validation.
+Version 0.4.4 has an automated Windows upgrade check from 0.4.3, using an artificial profile marker. It is not a physical USB or real-wallet migration test. Physical Windows USB behavior and a separate Windows 10/11 manual session still require validation.

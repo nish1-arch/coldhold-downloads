@@ -2,23 +2,23 @@
   "releases": [
     {
       "platform": "windows",
-      "version": "0.4.3",
-      "url": "https://github.com/nish1-arch/coldhold-downloads/releases/download/v0.4.3/elWALLET-0.4.3-win-x64.exe",
+      "version": "0.4.4",
+      "url": "https://github.com/nish1-arch/coldhold-downloads/releases/download/v0.4.4/elWALLET-0.4.4-win-x64.exe",
       "verified": true,
-      "filename": "elWALLET-0.4.3-win-x64.exe",
-      "sha256": "688c73e5f9b32395fd2de19508ff4df14c17f4aca9c1d250bdad060935ab5634",
+      "filename": "elWALLET-0.4.4-win-x64.exe",
+      "sha256": "f36543aad48c9104faadc65d2d36c1e676449970573eae27b07501dca97acffb",
       "size": "142.6 MB",
-      "notes": "Windows x64. New elWALLET branding, website teal/cyan palette and patched SQLite. Includes the local backend; no terminal or API key needed. Unsigned on Windows; ad-hoc signed, not notarized on Mac."
+      "notes": "Windows x64. Corrected website W logo in the app and installer. Includes the local backend; no terminal or API key needed. Windows is unsigned; Mac is ad-hoc signed without notarization."
     },
     {
       "platform": "macos",
-      "version": "0.4.3",
-      "url": "https://github.com/nish1-arch/coldhold-downloads/releases/download/v0.4.3/elWALLET-0.4.3-mac-arm64.dmg",
+      "version": "0.4.4",
+      "url": "https://github.com/nish1-arch/coldhold-downloads/releases/download/v0.4.4/elWALLET-0.4.4-mac-arm64.dmg",
       "verified": true,
-      "filename": "elWALLET-0.4.3-mac-arm64.dmg",
-      "sha256": "62ba1bff6f5e45c2c1a24e862e271d540cc32d146069f83219974433d1717277",
-      "size": "144.6 MB",
-      "notes": "Mac with Apple Silicon. New elWALLET branding, website teal/cyan palette and patched SQLite. Includes the local backend; no terminal or API key needed. Unsigned on Windows; ad-hoc signed, not notarized on Mac."
+      "filename": "elWALLET-0.4.4-mac-arm64.dmg",
+      "sha256": "22c319d022309036125338f84f71797e3543fdcf2cde6aa9ff93ef718dad5f0d",
+      "size": "144.5 MB",
+      "notes": "Mac with Apple Silicon. Corrected website W logo in the app and installer. Includes the local backend; no terminal or API key needed. Windows is unsigned; Mac is ad-hoc signed without notarization."
     }
   ]
 }

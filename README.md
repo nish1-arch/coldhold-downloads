@@ -1,16 +1,16 @@
 # elWALLET Desktop
 
-elWALLET 0.4.3 is an English-language wallet with password + USB unlocking and the website’s deep teal and cyan palette, rounded elWALLET logo and locally bundled DM Sans font. The application, local backend and native signer are included: no terminal, Node.js, Rust, Docker, server subscription or API key is required.
+elWALLET 0.4.4 is an English-language wallet with password + USB unlocking and the website’s deep teal and cyan palette, rounded W logo and locally bundled DM Sans font. The application, local backend and native signer are included: no terminal, Node.js, Rust, Docker, server subscription or API key is required.
 
-- **[Download for Windows x64 (.exe)](https://github.com/nish1-arch/coldhold-downloads/releases/download/v0.4.3/elWALLET-0.4.3-win-x64.exe)**
-- **[Download for Mac with Apple Silicon (.dmg)](https://github.com/nish1-arch/coldhold-downloads/releases/download/v0.4.3/elWALLET-0.4.3-mac-arm64.dmg)**
-- [Release notes, checksums and verification](https://github.com/nish1-arch/coldhold-downloads/releases/tag/v0.4.3)
+- **[Download for Windows x64 (.exe)](https://github.com/nish1-arch/coldhold-downloads/releases/download/v0.4.4/elWALLET-0.4.4-win-x64.exe)**
+- **[Download for Mac with Apple Silicon (.dmg)](https://github.com/nish1-arch/coldhold-downloads/releases/download/v0.4.4/elWALLET-0.4.4-mac-arm64.dmg)**
+- [Release notes, checksums and verification](https://github.com/nish1-arch/coldhold-downloads/releases/tag/v0.4.4)
 
 On Windows, run the installer and open elWALLET from the desktop or Start menu. On an M-series Mac, open the DMG and drag the app to Applications. The bundle keeps the filename `Coldhold.app` for update compatibility; the window is named elWALLET. Close the application before installing an update. Intel Mac and Linux packages have not been updated for this release.
 
-![elWALLET interface](images/interface-0.4.3.jpg)
+![elWALLET interface](images/interface-0.4.4.jpg)
 
-Preview of the 0.4.3 shared interface with placeholder wallet data. The same branding is included in the Windows installer, app icons and Mac disk image.
+Preview of the 0.4.4 shared interface with placeholder wallet data. The same branding is included in the Windows installer, app icons and Mac disk image.
 
 ## Three supported networks
 
@@ -32,7 +32,11 @@ The elWALLET project token and pool belong on Elysium and **are not deployed**. 
 
 The backend runs on the user's computer without a paid service or embedded provider credentials. Public RPC endpoints can be rate-limited or unavailable. Blockchain transfers still require the user's own SOL or HYPE for network fees. The app does not purchase services or silently switch to a paid provider.
 
-## Changes in 0.4.3
+## Logo correction in 0.4.4
+
+The app now uses the same rounded W as the live website. This replaces the older el monogram in 0.4.3, including the Windows executable icon, Mac app icon and installation artwork. Wallet behavior, the existing data folder and the teal/cyan palette are retained.
+
+## Improvements retained from 0.4.3
 
 This release applies the new name and website palette to the Windows and Mac interfaces, app icons and installer artwork. The existing wallet profile and application identity are preserved across the rename. It also updates Electron to 45.2.3 and fixes SQLite WAL handling in the native signer, desktop outbox and local gateway. The packaged app checks its compiled SQLite fix before opening a profile database. No paid service or additional end-user setup is introduced.
 
@@ -56,7 +60,7 @@ See the [recovery and interrupted-payment guide](RECOVERY.md) for steps that do 
 
 The release includes `verification.json`, `SHA256SUMS.txt` and actual packaged-app/installer reports. They distinguish local-chain execution from public RPC reads and simulation. No real-funds mainnet transaction was broadcast during verification.
 
-Windows installation, upgrade from the SHA256-pinned 0.4.0 release, same-version reinstallation, Unicode paths, shortcuts, application launch, uninstall and profile retention were tested on a Windows Server 2022 runner. Profile retention uses an artificial marker, not a real USB wallet migration. Physical USB removal/reinsertion on Windows and a separate Windows 10/11 manual GUI session remain unverified.
+Windows installation, upgrade from the SHA256-pinned 0.4.3 release, same-version reinstallation, Unicode paths, shortcuts, application launch, uninstall and profile retention were tested on a Windows Server 2022 runner. Profile retention uses an artificial marker, not a real USB wallet migration. Physical USB removal/reinsertion on Windows and a separate Windows 10/11 manual GUI session remain unverified.
 
 Windows packages are unsigned; Mac packages have an ad-hoc signature without Apple notarization. OS reputation or security controls may warn or block. Removing the pre-release version suffix does not change these facts or establish an independent audit.
 

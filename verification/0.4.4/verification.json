@@ -1,0 +1,541 @@
+{
+  "version": "0.4.4",
+  "verifiedAt": "2026-11-09T17:08:46.514631+00:00",
+  "sourceCommit": "64e7bc48139e9cd45e84717602f70cc86db03886",
+  "ci": {
+    "conclusion": "success",
+    "headSha": "64e7bc48139e9cd45e84717602f70cc86db03886",
+    "jobs": [
+      {
+        "name": "security",
+        "conclusion": "success",
+        "url": "https://github.com/nish1-arch/coldhold-backend/actions/runs/42660010964/job/129308725585"
+      },
+      {
+        "name": "rust (windows-latest)",
+        "conclusion": "success",
+        "url": "https://github.com/nish1-arch/coldhold-backend/actions/runs/42660010964/job/129308726130"
+      },
+      {
+        "name": "node-and-chains",
+        "conclusion": "success",
+        "url": "https://github.com/nish1-arch/coldhold-backend/actions/runs/42660010964/job/129308726203"
+      },
+      {
+        "name": "rust (macos-15)",
+        "conclusion": "success",
+        "url": "https://github.com/nish1-arch/coldhold-backend/actions/runs/42660010964/job/129308726215"
+      },
+      {
+        "name": "rust (ubuntu-latest)",
+        "conclusion": "success",
+        "url": "https://github.com/nish1-arch/coldhold-backend/actions/runs/42660010964/job/129308726309"
+      }
+    ],
+    "status": "completed",
+    "url": "https://github.com/nish1-arch/coldhold-backend/actions/runs/42660010964"
+  },
+  "packaging": {
+    "conclusion": "success",
+    "headSha": "64e7bc48139e9cd45e84717602f70cc86db03886",
+    "jobs": [
+      {
+        "name": "Package windows-x64",
+        "conclusion": "success",
+        "url": "https://github.com/nish1-arch/coldhold-backend/actions/runs/42660011024/job/129308731135"
+      }
+    ],
+    "status": "completed",
+    "url": "https://github.com/nish1-arch/coldhold-backend/actions/runs/42660011024"
+  },
+  "windowsRunner": "Windows Server 2022 x64",
+  "artifacts": [
+    {
+      "name": "elWALLET-0.4.4-win-x64.exe",
+      "sha256": "f36543aad48c9104faadc65d2d36c1e676449970573eae27b07501dca97acffb",
+      "bytes": 142576381
+    },
+    {
+      "name": "elWALLET-0.4.4-mac-arm64.dmg",
+      "sha256": "22c319d022309036125338f84f71797e3543fdcf2cde6aa9ff93ef718dad5f0d",
+      "bytes": 144468046
+    },
+    {
+      "name": "elWALLET-0.4.4-mac-arm64.zip",
+      "sha256": "4a15842a043c8130d82fc1b4a5ebdabfc79802ef799e047bbdbd6162e12866a4",
+      "bytes": 139915497
+    }
+  ],
+  "publisherSignature": {
+    "windows": "unsigned",
+    "mac": "ad-hoc; not Apple notarized"
+  },
+  "installedWindowsApplication": {
+    "install": {
+      "desktopSmoke": "passed",
+      "platform": "win32",
+      "arch": "x64",
+      "packaged": true,
+      "version": "0.4.4",
+      "appName": "elWALLET",
+      "windowTitle": "elWALLET",
+      "node": "24.22.2",
+      "electron": "45.2.3",
+      "sqlite": {
+        "engine": "better-sqlite3",
+        "addonVersion": "13.0.3",
+        "sqliteVersion": "3.53.4",
+        "sqliteSourceId": "2026-07-24 19:02:57 bf7c7f30031888f4e796e429ab3978879485813aaca6f641c7b33e4e09459bcc coldhold-wal-e5bf1198",
+        "walPatch": "e5bf119821f25be1d7f10ef0a2edbe175289166e",
+        "sourceSha256": "236ca509d6f14ff152594ff7588223d9892d2867af7c023fd8733b42fc7009b5"
+      },
+      "isolation": {
+        "node": "undefined",
+        "require": "undefined",
+        "bridge": "function",
+        "origin": "coldhold://app"
+      },
+      "ui": {
+        "title": "elWALLET",
+        "language": "en",
+        "bundledFontLoaded": true,
+        "english": true,
+        "betaLabels": false,
+        "developmentLabels": false,
+        "selectedNetwork": "solana-mainnet",
+        "networks": [
+          {
+            "id": "hyperevm",
+            "disabled": false
+          },
+          {
+            "id": "elysium",
+            "disabled": false
+          },
+          {
+            "id": "solana-mainnet",
+            "disabled": false
+          }
+        ]
+      },
+      "usb": {
+        "devices": []
+      },
+      "freeRpc": true,
+      "restart": "passed",
+      "physicalUsb": "not-tested"
+    },
+    "upgrade": {
+      "desktopSmoke": "passed",
+      "platform": "win32",
+      "arch": "x64",
+      "packaged": true,
+      "version": "0.4.4",
+      "appName": "elWALLET",
+      "windowTitle": "elWALLET",
+      "node": "24.22.2",
+      "electron": "45.2.3",
+      "sqlite": {
+        "engine": "better-sqlite3",
+        "addonVersion": "13.0.3",
+        "sqliteVersion": "3.53.4",
+        "sqliteSourceId": "2026-07-24 19:02:57 bf7c7f30031888f4e796e429ab3978879485813aaca6f641c7b33e4e09459bcc coldhold-wal-e5bf1198",
+        "walPatch": "e5bf119821f25be1d7f10ef0a2edbe175289166e",
+        "sourceSha256": "236ca509d6f14ff152594ff7588223d9892d2867af7c023fd8733b42fc7009b5"
+      },
+      "isolation": {
+        "node": "undefined",
+        "require": "undefined",
+        "bridge": "function",
+        "origin": "coldhold://app"
+      },
+      "ui": {
+        "title": "elWALLET",
+        "language": "en",
+        "bundledFontLoaded": true,
+        "english": true,
+        "betaLabels": false,
+        "developmentLabels": false,
+        "selectedNetwork": "solana-mainnet",
+        "networks": [
+          {
+            "id": "hyperevm",
+            "disabled": false
+          },
+          {
+            "id": "elysium",
+            "disabled": false
+          },
+          {
+            "id": "solana-mainnet",
+            "disabled": false
+          }
+        ]
+      },
+      "usb": {
+        "devices": []
+      },
+      "freeRpc": true,
+      "restart": "passed",
+      "physicalUsb": "not-tested"
+    },
+    "reinstall": {
+      "desktopSmoke": "passed",
+      "platform": "win32",
+      "arch": "x64",
+      "packaged": true,
+      "version": "0.4.4",
+      "appName": "elWALLET",
+      "windowTitle": "elWALLET",
+      "node": "24.22.2",
+      "electron": "45.2.3",
+      "sqlite": {
+        "engine": "better-sqlite3",
+        "addonVersion": "13.0.3",
+        "sqliteVersion": "3.53.4",
+        "sqliteSourceId": "2026-07-24 19:02:57 bf7c7f30031888f4e796e429ab3978879485813aaca6f641c7b33e4e09459bcc coldhold-wal-e5bf1198",
+        "walPatch": "e5bf119821f25be1d7f10ef0a2edbe175289166e",
+        "sourceSha256": "236ca509d6f14ff152594ff7588223d9892d2867af7c023fd8733b42fc7009b5"
+      },
+      "isolation": {
+        "node": "undefined",
+        "require": "undefined",
+        "bridge": "function",
+        "origin": "coldhold://app"
+      },
+      "ui": {
+        "title": "elWALLET",
+        "language": "en",
+        "bundledFontLoaded": true,
+        "english": true,
+        "betaLabels": false,
+        "developmentLabels": false,
+        "selectedNetwork": "solana-mainnet",
+        "networks": [
+          {
+            "id": "hyperevm",
+            "disabled": false
+          },
+          {
+            "id": "elysium",
+            "disabled": false
+          },
+          {
+            "id": "solana-mainnet",
+            "disabled": false
+          }
+        ]
+      },
+      "usb": {
+        "devices": []
+      },
+      "freeRpc": true,
+      "restart": "passed",
+      "physicalUsb": "not-tested"
+    }
+  },
+  "baselineWindowsApplication": {
+    "desktopSmoke": "passed",
+    "platform": "win32",
+    "arch": "x64",
+    "packaged": true,
+    "version": "0.4.3",
+    "appName": "elWALLET",
+    "windowTitle": "elWALLET",
+    "node": "24.22.2",
+    "electron": "45.2.3",
+    "sqlite": {
+      "engine": "better-sqlite3",
+      "addonVersion": "13.0.3",
+      "sqliteVersion": "3.53.4",
+      "sqliteSourceId": "2026-07-24 19:02:57 bf7c7f30031888f4e796e429ab3978879485813aaca6f641c7b33e4e09459bcc coldhold-wal-e5bf1198",
+      "walPatch": "e5bf119821f25be1d7f10ef0a2edbe175289166e",
+      "sourceSha256": "236ca509d6f14ff152594ff7588223d9892d2867af7c023fd8733b42fc7009b5"
+    },
+    "isolation": {
+      "node": "undefined",
+      "require": "undefined",
+      "bridge": "function",
+      "origin": "coldhold://app"
+    },
+    "ui": {
+      "title": "elWALLET",
+      "language": "en",
+      "bundledFontLoaded": true,
+      "english": true,
+      "betaLabels": false,
+      "developmentLabels": false,
+      "selectedNetwork": "solana-mainnet",
+      "networks": [
+        {
+          "id": "hyperevm",
+          "disabled": false
+        },
+        {
+          "id": "elysium",
+          "disabled": false
+        },
+        {
+          "id": "solana-mainnet",
+          "disabled": false
+        }
+      ]
+    },
+    "usb": {
+      "devices": []
+    },
+    "freeRpc": true,
+    "restart": "passed",
+    "physicalUsb": "not-tested"
+  },
+  "installerLifecycle": {
+    "uninstall": "passed",
+    "startMenuShortcut": "passed",
+    "crossVersionUpgrade": "passed",
+    "upgradeTo": "0.4.4",
+    "upgradedExecutableMatchesFreshInstall": "passed",
+    "baselineInstallerUrl": "https://github.com/nish1-arch/coldhold-downloads/releases/download/v0.4.3/elWALLET-0.4.3-win-x64.exe",
+    "windowsInstaller": "passed",
+    "upgradeFrom": "0.4.3",
+    "baselineInstallerSha256": "688c73e5f9b32395fd2de19508ff4df14c17f4aca9c1d250bdad060935ab5634",
+    "profileDataPreserved": "passed",
+    "unicodeAndSpacesInInstallPath": "passed",
+    "desktopShortcut": "passed",
+    "install": "passed",
+    "reinstallSameVersion": "passed",
+    "physicalUsb": "not-tested",
+    "executableAndRuntimeVersions": "passed"
+  },
+  "websiteLogo": {
+    "websiteLogo": "https://coldhold-frontend.vercel.app/elwallet-mark.svg",
+    "logo": "rounded-W",
+    "sourceMatchesPublishedWebsite": true,
+    "geometry": {
+      "viewBox": "0 0 40 40",
+      "d": "M6 9v12.5a7 7 0 0 0 14 0V11m0 10.5a7 7 0 0 0 14 0V9",
+      "fill": "none",
+      "stroke": "#34b7dd",
+      "stroke-width": "5.5",
+      "stroke-linecap": "round",
+      "stroke-linejoin": "round"
+    },
+    "geometrySha256": "7cf704b55da444e2da0cf0b36a22a9aab83320606e8a611da6ec183b47467d5f"
+  },
+  "windowsInstallerBranding": {
+    "installerBranding": "passed",
+    "matchesSource": true,
+    "sha256": {
+      "installerHeader.bmp": "7be037ee1d7324bc38498b6067b52dd2d15fe5769da205f75a3f9839f202618f",
+      "installerSidebar.bmp": "e389c487d0c769b9325f740f68355f117e9cafe8f572b2c2725d39f2dea42172"
+    }
+  },
+  "macNativeIcon": {
+    "nativeIcon": "passed",
+    "sourcePixelsMatch": true,
+    "width": 1024,
+    "logo": "website-rounded-W"
+  },
+  "windowsNativeIcon": {
+    "nativeIcon": "passed",
+    "matchesMacIconFrame": true,
+    "pngSha256": "86d88b3d88d7c62ec1f4de224675c794ecd4454b9bea37208702b4032badc65d",
+    "logo": "website-rounded-W"
+  },
+  "macReleaseZipApplication": {
+    "desktopSmoke": "passed",
+    "platform": "darwin",
+    "arch": "arm64",
+    "packaged": true,
+    "version": "0.4.4",
+    "appName": "elWALLET",
+    "windowTitle": "elWALLET",
+    "node": "24.22.2",
+    "electron": "45.2.3",
+    "sqlite": {
+      "engine": "better-sqlite3",
+      "addonVersion": "13.0.3",
+      "sqliteVersion": "3.53.4",
+      "sqliteSourceId": "2026-07-24 19:02:57 bf7c7f30031888f4e796e429ab3978879485813aaca6f641c7b33e4e09459bcc coldhold-wal-e5bf1198",
+      "walPatch": "e5bf119821f25be1d7f10ef0a2edbe175289166e",
+      "sourceSha256": "236ca509d6f14ff152594ff7588223d9892d2867af7c023fd8733b42fc7009b5"
+    },
+    "isolation": {
+      "node": "undefined",
+      "require": "undefined",
+      "bridge": "function",
+      "origin": "coldhold://app"
+    },
+    "ui": {
+      "title": "elWALLET",
+      "language": "en",
+      "bundledFontLoaded": true,
+      "english": true,
+      "betaLabels": false,
+      "developmentLabels": false,
+      "selectedNetwork": "solana-mainnet",
+      "networks": [
+        {
+          "id": "hyperevm",
+          "disabled": false
+        },
+        {
+          "id": "elysium",
+          "disabled": false
+        },
+        {
+          "id": "solana-mainnet",
+          "disabled": false
+        }
+      ]
+    },
+    "usb": {
+      "devices": []
+    },
+    "freeRpc": true,
+    "restart": "passed",
+    "physicalUsb": "not-tested"
+  },
+  "macDmgInspection": {
+    "dmgInspection": "passed",
+    "applicationMatchesReleaseZip": true,
+    "backgroundMatchesSource": true,
+    "filesSha256": {
+      "Coldhold.app/Contents/Resources/app.asar": "87f0141b10cb9c68b2254397c1f0e787d03917fa6ae2811034d037d96063c685",
+      "Coldhold.app/Contents/Resources/native/wallet-local": "d2d57604081978a1b20ccc15834307ac98a0504443939ad5b93690fd3e364cbd",
+      "Coldhold.app/Contents/Resources/app.asar.unpacked/node_modules/better-sqlite3/build/Release/better_sqlite3.node": "62a80b99db3102fdc9f08c00d8e8124fe8a5b9761ba379c16adb8a98cc6f9ae4",
+      "Coldhold.app/Contents/Resources/icon.icns": "6b886ad4224c0efa455c906a05a57584d6511bf783f20ea5151d1f39848c038c",
+      "Coldhold.app/Contents/Info.plist": "c9142aa0d6ca96a00fdceabc367a979edef6f88390435c87a1b61ffcf9f41319"
+    },
+    "backgroundSha256": "eba8303ed7ed42f078c6cfdf4b3f95fd9f725655b47293671bd735c6865bceb9"
+  },
+  "packagedSourceInspection": {
+    "windows": {
+      "packagedSourceInspection": "passed",
+      "comparedWithCommit": "64e7bc48139e9cd45e84717602f70cc86db03886",
+      "version": "0.4.4",
+      "checkedAt": "2026-11-09T17:07:38.291Z",
+      "normalizedPackagedSourceHashes": {
+        "desktop/icon.svg": "7db0a49199b05e8a4c2086dbc05d7cf16dd406e0d66cf667b487625b57f3fc28",
+        "desktop/fonts/OFL.txt": "2af94f4fb533be8fa23282eb33e08ca311ddf47c2f32777e2040b282deeec65c",
+        "desktop/index.html": "ad67be49a29530a0deb25c8f850a7f938fc1e72a5f820fc34ae36990a390c673",
+        "desktop/renderer.js": "5e7b352d7e406780520861348654805d14c2657ca94d5a9a050fda17276fe5e6",
+        "desktop/style.css": "276c2c2bc7a9f11b42d5706a6195c9819e50540e9ef3853eef2cd30d65a21e3e",
+        "desktop/preload.cjs": "942135915d0dc615784fefdb22af23837f626840bcb13a3990ed68058023f62e",
+        "dist/packages/desktop/src/main.js": "a9005950079f0d2c0ecdbfdc0b7e3a4884aeb36165c2aa62a8915c5890ea94e9",
+        "dist/packages/desktop/src/controller.js": "026c976bb2b55fb017ec730e433cfb3f0ba3fef56a6681d3c76c07d89f0564b0",
+        "dist/packages/shared/src/networks.js": "f3bb2ce4087da42a6c1b34a92427da08b7d475e2d66d886eeba792cc7d217249",
+        "dist/packages/shared/src/chains.js": "9cf4941683c49d324b105b32a2a635b5462afbe77aa4e775aafe829b09fc8738",
+        "dist/packages/shared/src/sqlite.js": "a2c80deeb82001415ba28f1028a515da9c87d9d4e023d509aaa046fcfa0f9752",
+        "dist/packages/shared/src/sqlite-build.json": "57a29d92ca7a9b26580b647dee004aa5921810edfc429aa1f2c9d54d38322db7",
+        "dist/packages/gateway/src/server.js": "8d8c99eb180e8bc85e877a7b478a5b6bf9dd882d4cb1c44f2991a712b5f5ff10",
+        "dist/packages/token-launch/src/runner.js": "db6b1a542680dd971cfe89905c7f14075e172ed2b54f6b5a0bd350cf2e8b95ef",
+        "dist/packages/elysium/src/launch.js": "29118e803bca1465caa37eacbd57a2b9b4291890e5df604beb0513aec11a6e31",
+        "dist/packages/elysium/src/contracts.js": "7c4c6b3d483bdd469f184d3c3ad981e7d1b570893138adc0b679ad576f24e2f0",
+        "dist/packages/elysium/src/deployments.js": "64efc28eca72339db087794e67eef6d52a8df554451e15d0ad8571ca1a0889c1",
+        "dist/packages/elysium/src/deployments.json": "55e20cc05ebfe56e0da153e0fd588ab848163429a071abd42e06164fb4cc2d89",
+        "dist/packages/elysium/src/artifacts.json": "5385395fe47a851fa10aa02f9b6adb22ac612edbe946a76a45c4f095dc87ab1e",
+        "desktop/icon.png": "4e1bdd216028968bdcdec4701c981b808694551755c92600383d818ee8f64ceb",
+        "desktop/fonts/dm-sans-latin.woff2": "468d56b6b25b05b70190b6c233d773f6f1770e8579827ce022a57f03fa8002fb"
+      },
+      "nativeSigner": {
+        "bytes": 6801920,
+        "sha256": "3dce409ce50ba0bd31bfb1a4acf5ae22ced6fe63d0150f4b304183a489590c0c"
+      },
+      "sqliteNativeAddon": {
+        "bytes": 1989632,
+        "sha256": "7ede32006a08421a7fee0d7cf47a719898b2302a92b44163d069d4bb59477378"
+      }
+    },
+    "mac": {
+      "packagedSourceInspection": "passed",
+      "comparedWithCommit": "64e7bc48139e9cd45e84717602f70cc86db03886",
+      "version": "0.4.4",
+      "checkedAt": "2026-11-09T17:00:40.137Z",
+      "normalizedPackagedSourceHashes": {
+        "desktop/icon.svg": "7db0a49199b05e8a4c2086dbc05d7cf16dd406e0d66cf667b487625b57f3fc28",
+        "desktop/fonts/OFL.txt": "2af94f4fb533be8fa23282eb33e08ca311ddf47c2f32777e2040b282deeec65c",
+        "desktop/index.html": "ad67be49a29530a0deb25c8f850a7f938fc1e72a5f820fc34ae36990a390c673",
+        "desktop/renderer.js": "5e7b352d7e406780520861348654805d14c2657ca94d5a9a050fda17276fe5e6",
+        "desktop/style.css": "276c2c2bc7a9f11b42d5706a6195c9819e50540e9ef3853eef2cd30d65a21e3e",
+        "desktop/preload.cjs": "942135915d0dc615784fefdb22af23837f626840bcb13a3990ed68058023f62e",
+        "dist/packages/desktop/src/main.js": "a9005950079f0d2c0ecdbfdc0b7e3a4884aeb36165c2aa62a8915c5890ea94e9",
+        "dist/packages/desktop/src/controller.js": "026c976bb2b55fb017ec730e433cfb3f0ba3fef56a6681d3c76c07d89f0564b0",
+        "dist/packages/shared/src/networks.js": "f3bb2ce4087da42a6c1b34a92427da08b7d475e2d66d886eeba792cc7d217249",
+        "dist/packages/shared/src/chains.js": "9cf4941683c49d324b105b32a2a635b5462afbe77aa4e775aafe829b09fc8738",
+        "dist/packages/shared/src/sqlite.js": "a2c80deeb82001415ba28f1028a515da9c87d9d4e023d509aaa046fcfa0f9752",
+        "dist/packages/shared/src/sqlite-build.json": "57a29d92ca7a9b26580b647dee004aa5921810edfc429aa1f2c9d54d38322db7",
+        "dist/packages/gateway/src/server.js": "8d8c99eb180e8bc85e877a7b478a5b6bf9dd882d4cb1c44f2991a712b5f5ff10",
+        "dist/packages/token-launch/src/runner.js": "db6b1a542680dd971cfe89905c7f14075e172ed2b54f6b5a0bd350cf2e8b95ef",
+        "dist/packages/elysium/src/launch.js": "29118e803bca1465caa37eacbd57a2b9b4291890e5df604beb0513aec11a6e31",
+        "dist/packages/elysium/src/contracts.js": "7c4c6b3d483bdd469f184d3c3ad981e7d1b570893138adc0b679ad576f24e2f0",
+        "dist/packages/elysium/src/deployments.js": "64efc28eca72339db087794e67eef6d52a8df554451e15d0ad8571ca1a0889c1",
+        "dist/packages/elysium/src/deployments.json": "55e20cc05ebfe56e0da153e0fd588ab848163429a071abd42e06164fb4cc2d89",
+        "dist/packages/elysium/src/artifacts.json": "5385395fe47a851fa10aa02f9b6adb22ac612edbe946a76a45c4f095dc87ab1e",
+        "desktop/icon.png": "4e1bdd216028968bdcdec4701c981b808694551755c92600383d818ee8f64ceb",
+        "desktop/fonts/dm-sans-latin.woff2": "468d56b6b25b05b70190b6c233d773f6f1770e8579827ce022a57f03fa8002fb"
+      },
+      "nativeSigner": {
+        "bytes": 5309120,
+        "sha256": "d2d57604081978a1b20ccc15834307ac98a0504443939ad5b93690fd3e364cbd"
+      },
+      "sqliteNativeAddon": {
+        "bytes": 1953024,
+        "sha256": "62a80b99db3102fdc9f08c00d8e8124fe8a5b9761ba379c16adb8a98cc6f9ae4"
+      }
+    }
+  },
+  "publicRpc": {
+    "checkedAt": "2026-11-09T17:03:44.713Z",
+    "profile": "free-public-rpc",
+    "apiKeyRequired": false,
+    "checks": [
+      {
+        "network": "hyperevm",
+        "endpoint": "https://rpc.hyperliquid.xyz/evm",
+        "status": "ok",
+        "height": "0x3077401",
+        "milliseconds": 1290
+      },
+      {
+        "network": "elysium",
+        "endpoint": "https://node.eleos.fun",
+        "status": "ok",
+        "height": "0x338d9b",
+        "milliseconds": 863
+      },
+      {
+        "network": "solana-mainnet",
+        "endpoint": "https://api.mainnet.solana.com",
+        "status": "ok",
+        "height": "467394518",
+        "milliseconds": 570
+      }
+    ]
+  },
+  "releaseScope": "Correct the app, operating-system and installer logos to match the live website rounded W. The 0.4.3 wallet behavior, website palette, patched SQLite and Electron are retained. Production token/pool launch remains unconfigured.",
+  "tests": {
+    "nodePassed": 70,
+    "nodeSkipped": 0,
+    "rust": "Workspace tests passed on Linux/macOS/Windows; real Windows ABI, error-mode and ACL tests included.",
+    "mainnetChainIds": "Native/ERC20 transfers executed with Rust signatures on local Anvil 999 and 99901, not public mainnet broadcasts. HyperEVM fixture rejects non-latest state requests.",
+    "elysiumLaunch": "Local chain 99801 legacy and chain 99901 network-bound factory/launcher/token/approval/pool executed with Rust signatures; restart, early pool donation, wrong target/chain and changed runtime/implementation rejected. Production mainnet manifest remains unconfigured.",
+    "recovery": "Lost pre-RPC submission, same-byte retry after restart, damaged receipt/account caches, raw vault backup, address mismatch and failed unlock session revocation tested.",
+    "solana": "Real SPL/metadata/Raydium bytecode executed with Rust signatures on LiteSVM.",
+    "macPackaging": "Release ZIP extracted; codesign verification and packaged app smoke passed; DMG checksum verified.",
+    "security": "CI dependency gates and secret/history scans passed. Native wallet bundles SQLite 3.54.1; desktop and gateway verify the source-built addon carrying the exact upstream WAL page-size correction before opening disk databases."
+  },
+  "limitations": [
+    "Elysium uses the free Eleos community RPC and explorer; launch-window inbox relaying can delay confirmation. No provider SLA is claimed.",
+    "Project token and pool are not deployed; production manifest is unconfigured. Public testnet launch awaits free faucet HYPE; final owner/liquidity parameters and canonical mainnet WHYPE pins remain unapproved.",
+    "Physical USB on Windows is not tested; simulated faults and Win32/installer CI do not establish hardware coverage.",
+    "No independent security audit, real-funds mainnet transfer or separate Windows 10/11 manual GUI test.",
+    "Cross-version upgrade from pinned 0.4.3 and same-version reinstall passed on the Windows runner. Profile retention uses an artificial marker, not a real USB wallet migration.",
+    "Unsigned/unnotarized packages; OS reputation or corporate controls can warn or block."
+  ],
+  "runtime": {
+    "localBackend": "free",
+    "paidHostingRequired": false,
+    "apiKeyRequired": false,
+    "networkFees": "Paid by the user for real transactions; public RPC limits apply."
+  }
+}

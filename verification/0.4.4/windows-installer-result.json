@@ -1,0 +1,18 @@
+{
+  "uninstall": "passed",
+  "startMenuShortcut": "passed",
+  "crossVersionUpgrade": "passed",
+  "upgradeTo": "0.4.4",
+  "upgradedExecutableMatchesFreshInstall": "passed",
+  "baselineInstallerUrl": "https://github.com/nish1-arch/coldhold-downloads/releases/download/v0.4.3/elWALLET-0.4.3-win-x64.exe",
+  "windowsInstaller": "passed",
+  "upgradeFrom": "0.4.3",
+  "baselineInstallerSha256": "688c73e5f9b32395fd2de19508ff4df14c17f4aca9c1d250bdad060935ab5634",
+  "profileDataPreserved": "passed",
+  "unicodeAndSpacesInInstallPath": "passed",
+  "desktopShortcut": "passed",
+  "install": "passed",
+  "reinstallSameVersion": "passed",
+  "physicalUsb": "not-tested",
+  "executableAndRuntimeVersions": "passed"
+}
