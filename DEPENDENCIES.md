@@ -17,3 +17,7 @@ Cargo's lockfile still resolves Alloy's **disabled optional** k256/crypto-bigint
 RustSec also flags bincode 1.3.3 as unmaintained (RUSTSEC-2025-0141). It is required by the pinned Solana message format. Payloads are tightly bounded, structures validated, and canonical reserialization compared before signing. This informational maintenance warning is retained in audit output, not suppressed. Migration to newer Solana message/serialization crates requires protocol compatibility tests.
 
 RustSec additionally reports the transitive `derivative` (RUSTSEC-2024-0388) and `paste` (RUSTSEC-2024-0436) crates as unmaintained. These informational findings remain visible in CI and are part of dependency-upgrade review. Gitleaks has one narrowly scoped allowlist entry for the exact public Solana test-vector address in the example pool configuration; no credential pattern is globally ignored.
+
+## Bundled font
+
+DM Sans is bundled locally under the SIL Open Font License 1.1. Its copyright and full license are included at `desktop/fonts/OFL.txt` inside the application archive. Font loading does not contact a CDN or font service.

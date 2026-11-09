@@ -1,12 +1,16 @@
 # Coldhold Desktop
 
-Coldhold 0.4.0 is an English-language wallet with password + USB unlocking and the website’s charcoal and orange colors. The application, local backend and native signer are included: no terminal, Node.js, Rust, Docker, server subscription or API key is required.
+Coldhold 0.4.1 is an English-language wallet with password + USB unlocking and the website’s charcoal and orange palette, geometric C logo and locally bundled DM Sans font. The application, local backend and native signer are included: no terminal, Node.js, Rust, Docker, server subscription or API key is required.
 
-- **[Download for Windows x64 (.exe)](https://github.com/nish1-arch/coldhold-downloads/releases/download/v0.4.0/Coldhold-0.4.0-win-x64.exe)**
-- **[Download for Mac with Apple Silicon (.dmg)](https://github.com/nish1-arch/coldhold-downloads/releases/download/v0.4.0/Coldhold-0.4.0-mac-arm64.dmg)**
-- [Release notes, checksums and verification](https://github.com/nish1-arch/coldhold-downloads/releases/tag/v0.4.0)
+- **[Download for Windows x64 (.exe)](https://github.com/nish1-arch/coldhold-downloads/releases/download/v0.4.1/Coldhold-0.4.1-win-x64.exe)**
+- **[Download for Mac with Apple Silicon (.dmg)](https://github.com/nish1-arch/coldhold-downloads/releases/download/v0.4.1/Coldhold-0.4.1-mac-arm64.dmg)**
+- [Release notes, checksums and verification](https://github.com/nish1-arch/coldhold-downloads/releases/tag/v0.4.1)
 
 On Windows, run the installer and open Coldhold from the desktop or Start menu. On an M-series Mac, open the DMG and drag Coldhold to Applications. Close Coldhold before installing an update. Intel Mac and Linux packages have not been updated for this release.
+
+![Coldhold interface](images/interface-0.4.1.png)
+
+Interface preview with placeholder wallet data. The same branding is included in the Windows installer, app icons and Mac disk image.
 
 ## Three supported networks
 
