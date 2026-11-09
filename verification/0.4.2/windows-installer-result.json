@@ -1,0 +1,18 @@
+{
+  "startMenuShortcut": "passed",
+  "profileDataPreserved": "passed",
+  "windowsInstaller": "passed",
+  "upgradeFrom": "0.4.0",
+  "install": "passed",
+  "reinstallSameVersion": "passed",
+  "upgradeTo": "0.4.2",
+  "crossVersionUpgrade": "passed",
+  "upgradedExecutableMatchesFreshInstall": "passed",
+  "executableAndRuntimeVersions": "passed",
+  "unicodeAndSpacesInInstallPath": "passed",
+  "desktopShortcut": "passed",
+  "uninstall": "passed",
+  "physicalUsb": "not-tested",
+  "baselineInstallerSha256": "159dc44a22823f0dc204a7fe0421e24cd08a1a849fb79b428f791487d8d8c6e3",
+  "baselineInstallerUrl": "https://github.com/nish1-arch/coldhold-downloads/releases/download/v0.4.0/Coldhold-0.4.0-win-x64.exe"
+}

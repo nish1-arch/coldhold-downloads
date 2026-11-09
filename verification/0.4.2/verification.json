@@ -1,0 +1,432 @@
+{
+  "version": "0.4.2",
+  "verifiedAt": "2026-11-09T01:56:43.174874+00:00",
+  "sourceCommit": "d637e4015bc16e5bf38b41f6aec02ee74c777cbc",
+  "ci": {
+    "conclusion": "success",
+    "headSha": "d637e4015bc16e5bf38b41f6aec02ee74c777cbc",
+    "jobs": [
+      {
+        "name": "security",
+        "conclusion": "success",
+        "url": "https://github.com/nish1-arch/coldhold-backend/actions/runs/42547359270/job/128935126835"
+      },
+      {
+        "name": "rust (windows-latest)",
+        "conclusion": "success",
+        "url": "https://github.com/nish1-arch/coldhold-backend/actions/runs/42547359270/job/128935127035"
+      },
+      {
+        "name": "node-and-chains",
+        "conclusion": "success",
+        "url": "https://github.com/nish1-arch/coldhold-backend/actions/runs/42547359270/job/128935127055"
+      },
+      {
+        "name": "rust (macos-15)",
+        "conclusion": "success",
+        "url": "https://github.com/nish1-arch/coldhold-backend/actions/runs/42547359270/job/128935127097"
+      },
+      {
+        "name": "rust (ubuntu-latest)",
+        "conclusion": "success",
+        "url": "https://github.com/nish1-arch/coldhold-backend/actions/runs/42547359270/job/128935127175"
+      }
+    ],
+    "status": "completed",
+    "url": "https://github.com/nish1-arch/coldhold-backend/actions/runs/42547359270"
+  },
+  "packaging": {
+    "conclusion": "success",
+    "headSha": "d637e4015bc16e5bf38b41f6aec02ee74c777cbc",
+    "jobs": [
+      {
+        "name": "Package windows-x64",
+        "conclusion": "success",
+        "url": "https://github.com/nish1-arch/coldhold-backend/actions/runs/42547359983/job/128935137169"
+      }
+    ],
+    "status": "completed",
+    "url": "https://github.com/nish1-arch/coldhold-backend/actions/runs/42547359983"
+  },
+  "windowsRunner": "Windows Server 2022 x64",
+  "artifacts": [
+    {
+      "name": "Coldhold-0.4.2-win-x64.exe",
+      "sha256": "3bcd62d91171d291684b324e6226baafbb8503a9ac795ce4c1e7522d9881094a",
+      "bytes": 131750842
+    },
+    {
+      "name": "Coldhold-0.4.2-mac-arm64.dmg",
+      "sha256": "4aa694e5b93453c87250e3acc6df5c0e88da2b5ab362f7c3bac7bcc58beac5d7",
+      "bytes": 137664632
+    },
+    {
+      "name": "Coldhold-0.4.2-mac-arm64.zip",
+      "sha256": "f84cbe838a6970aa7bff389d3262d831afd6989d23fc0ad56ee5985521a6676a",
+      "bytes": 133389052
+    }
+  ],
+  "publisherSignature": {
+    "windows": "unsigned",
+    "mac": "ad-hoc; not Apple notarized"
+  },
+  "installedWindowsApplication": {
+    "install": {
+      "desktopSmoke": "passed",
+      "platform": "win32",
+      "arch": "x64",
+      "packaged": true,
+      "version": "0.4.2",
+      "node": "24.22.1",
+      "electron": "45.2.1",
+      "isolation": {
+        "node": "undefined",
+        "require": "undefined",
+        "bridge": "function",
+        "origin": "coldhold://app"
+      },
+      "ui": {
+        "language": "en",
+        "bundledFontLoaded": true,
+        "english": true,
+        "betaLabels": false,
+        "developmentLabels": false,
+        "selectedNetwork": "solana-mainnet",
+        "networks": [
+          {
+            "id": "hyperevm",
+            "disabled": false
+          },
+          {
+            "id": "elysium",
+            "disabled": false
+          },
+          {
+            "id": "solana-mainnet",
+            "disabled": false
+          }
+        ]
+      },
+      "usb": {
+        "devices": []
+      },
+      "freeRpc": true,
+      "restart": "passed",
+      "physicalUsb": "not-tested"
+    },
+    "upgrade": {
+      "desktopSmoke": "passed",
+      "platform": "win32",
+      "arch": "x64",
+      "packaged": true,
+      "version": "0.4.2",
+      "node": "24.22.1",
+      "electron": "45.2.1",
+      "isolation": {
+        "node": "undefined",
+        "require": "undefined",
+        "bridge": "function",
+        "origin": "coldhold://app"
+      },
+      "ui": {
+        "language": "en",
+        "bundledFontLoaded": true,
+        "english": true,
+        "betaLabels": false,
+        "developmentLabels": false,
+        "selectedNetwork": "solana-mainnet",
+        "networks": [
+          {
+            "id": "hyperevm",
+            "disabled": false
+          },
+          {
+            "id": "elysium",
+            "disabled": false
+          },
+          {
+            "id": "solana-mainnet",
+            "disabled": false
+          }
+        ]
+      },
+      "usb": {
+        "devices": []
+      },
+      "freeRpc": true,
+      "restart": "passed",
+      "physicalUsb": "not-tested"
+    },
+    "reinstall": {
+      "desktopSmoke": "passed",
+      "platform": "win32",
+      "arch": "x64",
+      "packaged": true,
+      "version": "0.4.2",
+      "node": "24.22.1",
+      "electron": "45.2.1",
+      "isolation": {
+        "node": "undefined",
+        "require": "undefined",
+        "bridge": "function",
+        "origin": "coldhold://app"
+      },
+      "ui": {
+        "language": "en",
+        "bundledFontLoaded": true,
+        "english": true,
+        "betaLabels": false,
+        "developmentLabels": false,
+        "selectedNetwork": "solana-mainnet",
+        "networks": [
+          {
+            "id": "hyperevm",
+            "disabled": false
+          },
+          {
+            "id": "elysium",
+            "disabled": false
+          },
+          {
+            "id": "solana-mainnet",
+            "disabled": false
+          }
+        ]
+      },
+      "usb": {
+        "devices": []
+      },
+      "freeRpc": true,
+      "restart": "passed",
+      "physicalUsb": "not-tested"
+    }
+  },
+  "baselineWindowsApplication": {
+    "desktopSmoke": "passed",
+    "platform": "win32",
+    "arch": "x64",
+    "packaged": true,
+    "version": "0.4.0",
+    "node": "24.22.1",
+    "electron": "45.2.1",
+    "isolation": {
+      "node": "undefined",
+      "require": "undefined",
+      "bridge": "function",
+      "origin": "coldhold://app"
+    },
+    "ui": {
+      "language": "en",
+      "english": true,
+      "betaLabels": false,
+      "developmentLabels": false,
+      "selectedNetwork": "solana-mainnet",
+      "networks": [
+        {
+          "id": "hyperevm",
+          "disabled": false
+        },
+        {
+          "id": "elysium",
+          "disabled": false
+        },
+        {
+          "id": "solana-mainnet",
+          "disabled": false
+        }
+      ]
+    },
+    "usb": {
+      "devices": []
+    },
+    "freeRpc": true,
+    "restart": "passed",
+    "physicalUsb": "not-tested"
+  },
+  "installerLifecycle": {
+    "startMenuShortcut": "passed",
+    "profileDataPreserved": "passed",
+    "windowsInstaller": "passed",
+    "upgradeFrom": "0.4.0",
+    "install": "passed",
+    "reinstallSameVersion": "passed",
+    "upgradeTo": "0.4.2",
+    "crossVersionUpgrade": "passed",
+    "upgradedExecutableMatchesFreshInstall": "passed",
+    "executableAndRuntimeVersions": "passed",
+    "unicodeAndSpacesInInstallPath": "passed",
+    "desktopShortcut": "passed",
+    "uninstall": "passed",
+    "physicalUsb": "not-tested",
+    "baselineInstallerSha256": "159dc44a22823f0dc204a7fe0421e24cd08a1a849fb79b428f791487d8d8c6e3",
+    "baselineInstallerUrl": "https://github.com/nish1-arch/coldhold-downloads/releases/download/v0.4.0/Coldhold-0.4.0-win-x64.exe"
+  },
+  "macReleaseZipApplication": {
+    "desktopSmoke": "passed",
+    "platform": "darwin",
+    "arch": "arm64",
+    "packaged": true,
+    "version": "0.4.2",
+    "node": "24.22.1",
+    "electron": "45.2.1",
+    "isolation": {
+      "node": "undefined",
+      "require": "undefined",
+      "bridge": "function",
+      "origin": "coldhold://app"
+    },
+    "ui": {
+      "language": "en",
+      "bundledFontLoaded": true,
+      "english": true,
+      "betaLabels": false,
+      "developmentLabels": false,
+      "selectedNetwork": "solana-mainnet",
+      "networks": [
+        {
+          "id": "hyperevm",
+          "disabled": false
+        },
+        {
+          "id": "elysium",
+          "disabled": false
+        },
+        {
+          "id": "solana-mainnet",
+          "disabled": false
+        }
+      ]
+    },
+    "usb": {
+      "devices": []
+    },
+    "freeRpc": true,
+    "restart": "passed",
+    "physicalUsb": "not-tested"
+  },
+  "macDmgInspection": {
+    "dmgInspection": "passed",
+    "applicationMatchesReleaseZip": true,
+    "nativeSignerMatchesReleaseZip": true,
+    "backgroundMatchesSource": true,
+    "method": "Read-only archive extraction"
+  },
+  "packagedSourceInspection": {
+    "windows": {
+      "packagedSourceInspection": "passed",
+      "comparedWithCommit": "d637e4015bc16e5bf38b41f6aec02ee74c777cbc",
+      "version": "0.4.2",
+      "checkedAt": "2026-11-09T01:56:31.177Z",
+      "normalizedPackagedSourceHashes": {
+        "desktop/icon.svg": "77493fd41cc8d8e3234eefdada4dab94fada9eb13de434113a76c7ca6670432a",
+        "desktop/fonts/OFL.txt": "2af94f4fb533be8fa23282eb33e08ca311ddf47c2f32777e2040b282deeec65c",
+        "desktop/index.html": "899f8dd251554af8e4e833f9dc3d73f557a982a62fcd3009645e3f58c28aa857",
+        "desktop/renderer.js": "849d1b726a09bfe6a3f3d83b0dcc9d721a0c0ecdfed6bb3b487a6dc58aeb20ff",
+        "desktop/style.css": "0845078572fef7aa1a5cc63d6179f744e0729ed39e3567772f9aaf43cd410a12",
+        "desktop/preload.cjs": "942135915d0dc615784fefdb22af23837f626840bcb13a3990ed68058023f62e",
+        "dist/packages/desktop/src/main.js": "da691865bc487a47fb5ccbf151068af7a9356872538eed3554697d52ddf122e8",
+        "dist/packages/desktop/src/controller.js": "0526ad1d3b7a5ccf3c76a2f755f71184f9e114092e70b576428af7ffeae82599",
+        "dist/packages/shared/src/networks.js": "f3bb2ce4087da42a6c1b34a92427da08b7d475e2d66d886eeba792cc7d217249",
+        "dist/packages/shared/src/chains.js": "9cf4941683c49d324b105b32a2a635b5462afbe77aa4e775aafe829b09fc8738",
+        "dist/packages/gateway/src/server.js": "8d8c99eb180e8bc85e877a7b478a5b6bf9dd882d4cb1c44f2991a712b5f5ff10",
+        "dist/packages/token-launch/src/runner.js": "db6b1a542680dd971cfe89905c7f14075e172ed2b54f6b5a0bd350cf2e8b95ef",
+        "dist/packages/elysium/src/launch.js": "29118e803bca1465caa37eacbd57a2b9b4291890e5df604beb0513aec11a6e31",
+        "dist/packages/elysium/src/contracts.js": "7c4c6b3d483bdd469f184d3c3ad981e7d1b570893138adc0b679ad576f24e2f0",
+        "dist/packages/elysium/src/deployments.js": "64efc28eca72339db087794e67eef6d52a8df554451e15d0ad8571ca1a0889c1",
+        "dist/packages/elysium/src/deployments.json": "55e20cc05ebfe56e0da153e0fd588ab848163429a071abd42e06164fb4cc2d89",
+        "dist/packages/elysium/src/artifacts.json": "5385395fe47a851fa10aa02f9b6adb22ac612edbe946a76a45c4f095dc87ab1e",
+        "desktop/icon.png": "ce782030a5ce3bb91663bc450f425a7789da47aefc245f5efeea837701278046",
+        "desktop/fonts/dm-sans-latin.woff2": "468d56b6b25b05b70190b6c233d773f6f1770e8579827ce022a57f03fa8002fb"
+      },
+      "nativeSigner": {
+        "bytes": 6765568,
+        "sha256": "9098f0d91052d04b1360942fdd4acae5e2cf21da88bd1b061a7940b1065b9bdd"
+      }
+    },
+    "mac": {
+      "packagedSourceInspection": "passed",
+      "comparedWithCommit": "d637e4015bc16e5bf38b41f6aec02ee74c777cbc",
+      "version": "0.4.2",
+      "checkedAt": "2026-11-09T01:48:19.731Z",
+      "normalizedPackagedSourceHashes": {
+        "desktop/icon.svg": "77493fd41cc8d8e3234eefdada4dab94fada9eb13de434113a76c7ca6670432a",
+        "desktop/fonts/OFL.txt": "2af94f4fb533be8fa23282eb33e08ca311ddf47c2f32777e2040b282deeec65c",
+        "desktop/index.html": "899f8dd251554af8e4e833f9dc3d73f557a982a62fcd3009645e3f58c28aa857",
+        "desktop/renderer.js": "849d1b726a09bfe6a3f3d83b0dcc9d721a0c0ecdfed6bb3b487a6dc58aeb20ff",
+        "desktop/style.css": "0845078572fef7aa1a5cc63d6179f744e0729ed39e3567772f9aaf43cd410a12",
+        "desktop/preload.cjs": "942135915d0dc615784fefdb22af23837f626840bcb13a3990ed68058023f62e",
+        "dist/packages/desktop/src/main.js": "da691865bc487a47fb5ccbf151068af7a9356872538eed3554697d52ddf122e8",
+        "dist/packages/desktop/src/controller.js": "0526ad1d3b7a5ccf3c76a2f755f71184f9e114092e70b576428af7ffeae82599",
+        "dist/packages/shared/src/networks.js": "f3bb2ce4087da42a6c1b34a92427da08b7d475e2d66d886eeba792cc7d217249",
+        "dist/packages/shared/src/chains.js": "9cf4941683c49d324b105b32a2a635b5462afbe77aa4e775aafe829b09fc8738",
+        "dist/packages/gateway/src/server.js": "8d8c99eb180e8bc85e877a7b478a5b6bf9dd882d4cb1c44f2991a712b5f5ff10",
+        "dist/packages/token-launch/src/runner.js": "db6b1a542680dd971cfe89905c7f14075e172ed2b54f6b5a0bd350cf2e8b95ef",
+        "dist/packages/elysium/src/launch.js": "29118e803bca1465caa37eacbd57a2b9b4291890e5df604beb0513aec11a6e31",
+        "dist/packages/elysium/src/contracts.js": "7c4c6b3d483bdd469f184d3c3ad981e7d1b570893138adc0b679ad576f24e2f0",
+        "dist/packages/elysium/src/deployments.js": "64efc28eca72339db087794e67eef6d52a8df554451e15d0ad8571ca1a0889c1",
+        "dist/packages/elysium/src/deployments.json": "55e20cc05ebfe56e0da153e0fd588ab848163429a071abd42e06164fb4cc2d89",
+        "dist/packages/elysium/src/artifacts.json": "5385395fe47a851fa10aa02f9b6adb22ac612edbe946a76a45c4f095dc87ab1e",
+        "desktop/icon.png": "ce782030a5ce3bb91663bc450f425a7789da47aefc245f5efeea837701278046",
+        "desktop/fonts/dm-sans-latin.woff2": "468d56b6b25b05b70190b6c233d773f6f1770e8579827ce022a57f03fa8002fb"
+      },
+      "nativeSigner": {
+        "bytes": 5259600,
+        "sha256": "85da190b10defd2dba216996ec2149a611cca41158697f4448510d6862811967"
+      }
+    }
+  },
+  "publicRpc": {
+    "checkedAt": "2026-11-09T01:44:32.166Z",
+    "profile": "free-public-rpc",
+    "apiKeyRequired": false,
+    "checks": [
+      {
+        "network": "hyperevm",
+        "endpoint": "https://rpc.hyperliquid.xyz/evm",
+        "status": "ok",
+        "height": "0x30698f9",
+        "milliseconds": 1474
+      },
+      {
+        "network": "elysium",
+        "endpoint": "https://node.eleos.fun",
+        "status": "ok",
+        "height": "0x2b7b9a",
+        "milliseconds": 575
+      },
+      {
+        "network": "solana-mainnet",
+        "endpoint": "https://api.mainnet.solana.com",
+        "status": "ok",
+        "height": "467137589",
+        "milliseconds": 1452
+      }
+    ]
+  },
+  "releaseScope": "Durable exact-byte retry, activity-cache recovery, authenticated account-cache repair, raw damaged-vault recovery backup, cross-version Windows upgrade verification and guarded Elysium mainnet launch preparation. Production token/pool launch remains unconfigured.",
+  "tests": {
+    "nodePassed": 66,
+    "nodeSkipped": 0,
+    "rust": "Workspace tests passed on Linux/macOS/Windows; real Windows ABI, error-mode and ACL tests included.",
+    "mainnetChainIds": "Native/ERC20 transfers executed with Rust signatures on local Anvil 999 and 99901, not public mainnet broadcasts. HyperEVM fixture rejects non-latest state requests.",
+    "elysiumLaunch": "Local chain 99801 legacy and chain 99901 network-bound factory/launcher/token/approval/pool executed with Rust signatures; restart, early pool donation, wrong target/chain and changed runtime/implementation rejected. Production mainnet manifest remains unconfigured.",
+    "recovery": "Lost pre-RPC submission, same-byte retry after restart, damaged receipt/account caches, raw vault backup, address mismatch and failed unlock session revocation tested.",
+    "solana": "Real SPL/metadata/Raydium bytecode executed with Rust signatures on LiteSVM.",
+    "macPackaging": "Release ZIP extracted; codesign verification and packaged app smoke passed; DMG checksum verified.",
+    "security": "CI dependency gates and secret/history scans passed."
+  },
+  "limitations": [
+    "Elysium uses the free Eleos community RPC and explorer; launch-window inbox relaying can delay confirmation. No provider SLA is claimed.",
+    "Coldhold project token and pool are not deployed; production manifest is unconfigured. Public testnet launch awaits free faucet HYPE; final owner/liquidity parameters and canonical mainnet WHYPE pins remain unapproved.",
+    "Physical USB on Windows is not tested; simulated faults and Win32/installer CI do not establish hardware coverage.",
+    "No independent security audit, real-funds mainnet transfer or separate Windows 10/11 manual GUI test.",
+    "Cross-version upgrade from pinned 0.4.0 and same-version reinstall passed on the Windows runner. Profile retention uses an artificial marker, not a real USB wallet migration.",
+    "Unsigned/unnotarized packages; OS reputation or corporate controls can warn or block."
+  ],
+  "runtime": {
+    "localBackend": "free",
+    "paidHostingRequired": false,
+    "apiKeyRequired": false,
+    "networkFees": "Paid by the user for real transactions; public RPC limits apply."
+  }
+}
