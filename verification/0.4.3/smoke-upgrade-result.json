@@ -1,0 +1,54 @@
+{
+  "desktopSmoke": "passed",
+  "platform": "win32",
+  "arch": "x64",
+  "packaged": true,
+  "version": "0.4.3",
+  "appName": "elWALLET",
+  "windowTitle": "elWALLET",
+  "node": "24.22.2",
+  "electron": "45.2.3",
+  "sqlite": {
+    "engine": "better-sqlite3",
+    "addonVersion": "13.0.3",
+    "sqliteVersion": "3.53.4",
+    "sqliteSourceId": "2026-07-24 19:02:57 bf7c7f30031888f4e796e429ab3978879485813aaca6f641c7b33e4e09459bcc coldhold-wal-e5bf1198",
+    "walPatch": "e5bf119821f25be1d7f10ef0a2edbe175289166e",
+    "sourceSha256": "236ca509d6f14ff152594ff7588223d9892d2867af7c023fd8733b42fc7009b5"
+  },
+  "isolation": {
+    "node": "undefined",
+    "require": "undefined",
+    "bridge": "function",
+    "origin": "coldhold://app"
+  },
+  "ui": {
+    "title": "elWALLET",
+    "language": "en",
+    "bundledFontLoaded": true,
+    "english": true,
+    "betaLabels": false,
+    "developmentLabels": false,
+    "selectedNetwork": "solana-mainnet",
+    "networks": [
+      {
+        "id": "hyperevm",
+        "disabled": false
+      },
+      {
+        "id": "elysium",
+        "disabled": false
+      },
+      {
+        "id": "solana-mainnet",
+        "disabled": false
+      }
+    ]
+  },
+  "usb": {
+    "devices": []
+  },
+  "freeRpc": true,
+  "restart": "passed",
+  "physicalUsb": "not-tested"
+}

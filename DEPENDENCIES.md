@@ -1,6 +1,16 @@
 # Dependency security decisions
 
-Lockfiles are committed. npm installs use `--ignore-scripts`; required native test packages distribute prebuilt optional binaries. CI runs npm audit, RustSec, formatting, lint, typecheck, unit/integration tests and secret scanning. A clean check is not an independent security audit.
+Lockfiles are committed. npm installs use `--ignore-scripts`; the SQLite addon is then explicitly built from verified source. Required native test packages distribute prebuilt optional binaries. CI runs npm audit, RustSec, formatting, lint, typecheck, unit/integration tests and secret scanning. A clean check is not an independent security audit.
+
+## SQLite WAL correction in 0.4.3
+
+The native wallet now uses rusqlite 0.41.1 / libsqlite3-sys 0.39.1, bundling SQLite 3.54.1. This fixes [RUSTSEC-2026-0459](https://rustsec.org/advisories/RUSTSEC-2026-0459.html), where inconsistent database and WAL page sizes can expose uninitialized memory.
+
+Electron 45.2.3 still embeds SQLite 3.53.4. The gateway journal and desktop outbox therefore use the pinned `better-sqlite3@13.0.3` addon with the exact [upstream WAL fix](https://github.com/sqlite/sqlite/commit/e5bf119821f25be1d7f10ef0a2edbe175289166e) backported to its bundled SQLite. `scripts/prepare-sqlite-native.mjs` verifies the original source hashes, applies the fix, verifies the patched hashes, and removes downloaded prebuilds and stale build output. The build adds a diagnostic source ID suffix; the shared adapter verifies this ID in an in-memory database before opening any profile database. It loads only the explicitly compiled addon. An absent or unpatched addon fails closed.
+
+After `npm ci --ignore-scripts`, run `npm run native:node` for Node tools/tests. Desktop build commands prepare the pinned source and rebuild the addon for Electron; `npm run native:electron` does this explicitly for local development. Python 3 and a C++ compiler are required to build from source. End users receive the compiled addon in the installer. Packaged smoke reports record its version, source ID and patch identity on each tested platform.
+
+Regression coverage includes a database/WAL page-size mismatch, durable crash recovery with an incomplete trailing WAL frame, reopening existing journal data, and rejecting an unpatched engine before opening a disk database. No WAL or shared-memory files are deleted to work around the issue. Re-evaluate this backport when the addon ships an upstream-fixed SQLite version; update source pins, the diagnostic check, and regression tests together.
 
 ## JavaScript
 
